@@ -88,4 +88,22 @@
             </ul>
         </div>
     </nav>
+    <div class="search-global">
+        <div class="container">
+            <div class="search-form">
+                <div class="btn-area">
+                    <p class="close-btn">
+                        <a href="#" class="btn"></a>
+                    </p>
+                </div>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="search-global" class="sr-only">검색</label>
+                        <input type="text" id="search-global" class="form-control" placeholder="SEARCH">
+                        <button type="button" class="btn btn-search"><span class="sr-only">검색</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </header>
