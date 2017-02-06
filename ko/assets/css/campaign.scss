@@ -327,3 +327,222 @@
         }
     }    
 }
+.look-book {
+    .lookbook-head {
+        figure {
+            img {
+                margin: 0 auto;
+            }
+            figcaption {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+                h1 {
+                    @include lato();
+                    @include font(18px, 22px);
+                    font-weight: 300;
+                    color: #2b2b2b;
+                }
+            }
+        }
+    }
+    .lookbook-body {
+        margin: 0 auto;
+        max-width: 300px;
+        .lookbook-item {
+            figure {
+                position: relative;
+                top: 50px;
+                opacity: 0;
+                -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+                transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+                figcaption {
+                    h5 {
+                        @include lato();
+                        @include font(11px, 25px);
+                        font-weight: 300;
+                        color: #2b2b2b;
+                    }
+                }
+                &.on {
+                    top: 0;
+                    opacity: 1;
+                }
+            }
+            & + .lookbook-item {
+                figure {
+                    padding-top: 75px;
+                }
+            }
+        }
+    }
+    .lookbook-foot {
+        clear: both;
+        padding-top: 85px;
+        a {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+            height: 35px;
+            line-height: 33px;
+            border: 1px solid #aaa;
+            color: #666;
+            text-align: center;
+        }
+    }
+    @media (min-width: $sm) {
+        .lookbook-head {
+            figure {
+                figcaption {
+                    padding-top: 100px;
+                    padding-bottom: 100px;
+                    h1 {
+                        @include font(22px, 26px);
+                    }
+                }
+            }
+        }
+        .lookbook-body {
+            margin: auto;
+            max-width: none;
+            .lookbook-item {
+                figure {
+                    figcaption {
+                        h5 {
+                            @include font(12px, 25px);
+                        }
+                    }
+                }
+                & + .lookbook-item {
+                    figure {
+                        padding-top: 115px;
+                    }
+                }
+            }
+            .lookbook-type-1 {
+                figure {
+                    top: auto;
+                    left: 100px;
+                    &.on {
+                        left: 0;
+                    }
+                }
+            }
+            .lookbook-type-2 {
+                figure {
+                    top: 100px;
+                    &.on {
+                        top: 0;
+                    }
+                }
+            }
+            .lookbook-type-3 {
+                overflow: hidden;
+                figure {
+                    &:nth-of-type(1) {
+                        float: right;
+                        text-align: right;
+                        top: auto;
+                        left: -100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        clear: right;
+                        left: 100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            .lookbook-type-4 {
+                overflow: hidden;
+                figure {
+                    &:nth-of-type(1) {
+                        top: auto;
+                        left: 100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        float: right;
+                        text-align: right;
+                        left: -100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .lookbook-foot {
+            padding-top: 120px;
+            a {
+                height: 40px;
+                line-height: 38px;
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        .lookbook-head {
+            figure {
+                figcaption {
+                    padding-top: 75px;
+                    padding-bottom: 75px;
+                    h1 {
+                        @include font(23px, 27px);
+                    }
+                }
+            }
+        }
+        .lookbook-body {
+            .lookbook-item {
+                figure {
+                    figcaption {
+                        h5 {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                & + .lookbook-item {
+                    figure {
+                        padding-top: 150px;
+                    }
+                }
+            }
+            .lookbook-type-1 {
+            
+            }
+            .lookbook-type-2 {
+
+            }
+            .lookbook-type-3 {
+                figure {
+                    &:nth-of-type(1) {
+                        margin-top: 0;
+                    }
+                    &:nth-of-type(2) {
+                        margin-top: 250px;
+                        clear: none;
+                    }
+                }
+            }
+            .lookbook-type-4 {
+                figure {
+                    &:nth-of-type(1) {
+                        float: left;
+                    }
+                    &:nth-of-type(2) {
+                        margin-top: 80px;
+                    }
+                }
+            }
+        }
+        .lookbook-foot {
+            padding-top: 160px;
+        }
+    }
+}

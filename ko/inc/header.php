@@ -93,7 +93,7 @@
             <div class="search-form">
                 <div class="btn-area">
                     <p class="close-btn">
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn"><span class="sr-only">닫기</span></a>
                     </p>
                 </div>
                 <form action="#">

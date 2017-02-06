@@ -41,4 +41,13 @@
         }
     });
     
+    // 모바일 검색버튼
+    $(document).on('click', '#header .logo-nav .btn-search', function(e) {
+        $('#header').toggleClass('search-open');
+    });
+    $(document).on('click', '#header .search-global .search-form .close-btn .btn', function(e) {
+        $('#header').removeClass('search-open');
+        e.preventDefault();
+    });
+    
 })(jQuery);

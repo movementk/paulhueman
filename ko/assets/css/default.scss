@@ -435,6 +435,14 @@ a {
             }
         }
     }
+    .search-global {
+        display: none;
+    }
+    &.search-open {
+        .search-global {
+            display: block;
+        }
+    }
 }
 
 // 좌측 네비 영역(모바일, 테블릿 용)

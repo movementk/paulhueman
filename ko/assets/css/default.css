@@ -702,6 +702,10 @@ a {
             height: auto;
             opacity: 1;
             z-index: 1; } }
+  #header .search-global {
+    display: none; }
+  #header.search-open .search-global {
+    display: block; }
 
 #aside {
   visibility: hidden;
