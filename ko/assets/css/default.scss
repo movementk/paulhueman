@@ -442,6 +442,11 @@ a {
         .search-global {
             display: block;
         }
+        @media (min-width: $lg) {
+            .search-global {
+                display: none;
+            }
+        }
     }
 }
 
