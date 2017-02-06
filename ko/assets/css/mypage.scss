@@ -1,0 +1,2253 @@
+@import 'common';
+/* mypage lnb 공통 */
+.mypage {
+    .lnb {
+        display: none;
+        @media(min-width: $lg) {
+            display: block;
+        }
+    }
+    .page-header{
+        h2 {
+            @include noto();
+        }
+    }
+}
+
+/* my-page */
+.mypage-info {
+    text-align: center;
+    .article-header {
+        dl {
+            dt {
+                font-size: 13px;
+                color: #666;
+                font-weight: 400;
+                line-height: 20px;
+            }
+            dd {
+                line-height: 20px;
+                font-size: 13px;
+                color: #666;
+                font-weight: 400;
+                ul {
+                    display: inline-block;
+                    font-size: 0;
+                    li {
+                        font-size: 13px;
+                        color: #2b2b2b;
+                        font-weight: 400;
+                        display: inline-block;
+                        &:after {
+                            color: #2b2b2b;
+                            content: "/";
+                            padding: 0 5px;
+                        }
+                        &:last-child:after {
+                            content: "";
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .article-content {
+        margin-top: 100px;
+        .my-list {
+            display: block;
+            li {
+                a {
+                    font-size: 14px;
+                    color: #2b2b2b;
+                    font-weight: 800;
+                    @include lato();
+                }
+                & + li {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+/* order-list */
+.order-list {
+    .order-history {
+        .table-wrap {
+            .table {
+                border-top: 0;
+                thead {
+                    tr {
+                        th {
+                            font-size: 12px;
+                            color: #2b2b2b;
+                            font-weight: 400;
+                            text-align: center;
+                            letter-spacing: -.5px;
+                            padding: 15px 0;
+                            border: 0;
+                            border-bottom: 1px solid #000;
+                            &:nth-of-type(1) {
+                                width: 25%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 37%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 25%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 12%;
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 13px;
+                                &:nth-of-type(1) {
+                                    width: 15%;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 50%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 25%;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 10%;
+                                }
+                            }
+                            @media(min-width: $md) {
+                                letter-spacing: .5px;
+                                &:nth-of-type(1) {
+                                    width: 10%;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 65%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 10%;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            font-size: 11px;
+                            color: #666;
+                            text-align: center;
+                            font-weight: 300;
+                            padding-left: 0;
+                            padding-right: 0;
+                            letter-spacing: -.5px;
+                            &.date {
+                                font-weight: 400;
+                                @include lato();
+                                @media(min-width: $md) {
+                                    letter-spacing: .5px;
+                                }
+                            }
+                            &.items {
+                                text-align: left;
+                                padding-left: 10px;
+                                a {
+                                    font-size: 11px;
+                                    color: #666;
+                                    font-weight: 300;
+                                    .order-num {
+                                        display: block;
+                                    }
+                                }
+                                @media(min-width: $sm) {
+                                    padding-left: 60px;
+                                    letter-spacing: 0;
+                                    a {
+                                        font-size: 13px;
+                                        .order-num {
+                                            display: inline;
+                                        }
+                                    }
+                                }
+                                @media(min-width: $sm) {
+                                    padding-left: 50px;
+                                    a {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            &.amount {
+                                font-weight: 400;
+                                @include lato();
+                                @media(min-width: $md) {
+                                    letter-spacing: .5px;
+                                }
+                            }
+                            &:nth-of-type(1) {
+                                width: 25%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 37%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 25%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 12%;
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 13px;
+                                &:nth-of-type(1) {
+                                    width: 15%;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 50%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 25%;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 10%;
+                                }
+                            }
+                            @media(min-width: $md) {
+                                &:nth-of-type(1) {
+                                    width: 10%;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 65%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 10%;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 15%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .paging {
+            margin-top: 45px;
+            @media(min-width: $sm) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+/* order-view */
+.order-view {
+    .order-details {
+        article {
+            & + article {
+                margin-top: 60px;
+                @media(min-width: $sm) {
+                    margin-top: 70px;
+                }
+            }
+            h3 {
+                font-size: 12px;
+                color: #2b2b2b;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    font-size: 13px;
+                }
+            }
+            > .table-wrap {
+                .table {
+                    text-align: left;
+                    tbody {
+                        tr {
+                            th {
+                                width: 50%;
+                                font-size: 11px;
+                                color: #2b2b2b;
+                                font-weight: 400;
+                                padding: 15px 0 15px 10px;
+                                background: none;
+                                &.pay-txt {
+                                    padding-left: 20px;
+                                }
+                                @media(min-width: $sm) {
+                                    font-size: 12px;
+                                    padding-left: 20px;
+                                    width: 30%;
+                                }
+                                @media(min-width: $md) {
+                                    width: 20%;
+                                }
+                            }
+                            td {
+                                width: 50%;
+                                font-size: 11px;
+                                color: #666;
+                                font-weight: 300;
+                                padding: 15px 0;
+                                @media(min-width: $sm) {
+                                    width: 70%;
+                                    font-size: 12px;
+                                }
+                                @media(min-width: $md) {
+                                    width: 80%;
+                                }
+                                &.status {
+                                    padding: 5px 0;
+                                    .cancel {
+                                        display: inline-block;
+                                        margin-left: 10px;
+                                        .btn-cancel {
+                                            width: 66px;
+                                            height: 28px;
+                                            font-size: 11px;
+                                            color: #fff;
+                                            text-align: center;
+                                            line-height: 26px;
+                                            padding: 0;
+                                            border-radius: 0;
+                                            background-color: #2b2b2b;
+                                            @media(min-width: $sm) {
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .phone-list {
+                                    font-size: 0;
+                                    li {
+                                        display: inline-block;
+                                        font-size: 11px;
+                                        color: #666;
+                                        &:after {
+                                            content: "/";
+                                            padding: 0 3px;
+                                        }
+                                        &:last-child:after {
+                                            content: "";
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                                .bank-info {
+                                    display: none;
+                                    @media(min-width: $sm) {
+                                        display: inline-block;
+                                        font-size: 0;
+                                        margin-left: 35px;
+                                        li {
+                                            display: inline-block;
+                                            &:after {
+                                                font-size: 12px;
+                                                content: ",";
+                                                padding-right: 3px;
+                                            }
+                                            &:last-child:after {
+                                                content: "";
+                                                padding: 0;
+                                            }
+                                            dl {
+                                                display: inline;
+                                                font-size: 0;
+                                                dt {
+                                                    display: inline-block;
+                                                    font-size: 12px;
+                                                    color: #666;
+                                                    font-weight: 300;
+                                                    &:after {
+                                                        content: ":";
+                                                        padding: 0 5px;
+                                                    }
+                                                }
+                                                dd {
+                                                    display: inline-block;
+                                                    font-size: 12px;
+                                                    color: #666;
+                                                    font-weight: 300;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.my-items {
+                .table-wrap {
+                    border-top: 1px solid #2b2b2b;
+                    .table {
+                        border: 0;
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 12px;
+                                    color: #666;
+                                    font-weight: 400;
+                                    text-align: left;
+                                    border: 0;
+                                    border-bottom: 1px solid #dfdfdf;
+                                    display: none;
+                                    padding: 15px 0;
+                                    &.i-item {
+                                        padding-left: 20px;
+                                        @media(min-width: $sm) {
+                                            width: 80%;
+                                            display: table-cell;
+                                        }
+                                        @media(min-width: $md) {
+                                            width: 40%;
+                                        }
+                                    }
+                                    &.i-status {
+                                        @media(min-width: $sm) {
+                                            width: 20%;
+                                            display: table-cell;
+                                        }
+                                        @media(min-width: $md) {
+                                            width: 30%;
+                                            text-align: center;
+                                        }
+                                    }
+                                    &.i-tracking {
+                                        @media(min-width: $md) {
+                                            display: table-cell;
+                                            width: 30%;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    width: 50%;
+                                    padding-top: 30px;
+                                    padding-bottom: 30px;
+                                    vertical-align: middle;
+                                    @media(min-width: $sm) {
+                                        padding-top: 20px;
+                                        padding-bottom: 20px;
+                                    }
+                                    > .item-info {
+                                        font-size: 0;
+                                        > li {
+                                            width: 50%;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            color: #666;
+                                            font-size: 12px;
+                                            @media(min-width: $sm) {
+                                                &:first-child {
+                                                    width: 29%;
+                                                }
+                                                &:last-child {
+                                                    width: 71%;
+                                                }
+                                            }
+                                            @media(min-width: $md) {
+                                                &:first-child {
+                                                    width: 33%;
+                                                }
+                                                &:last-child {
+                                                    width: 67%;
+                                                }
+                                            }
+                                            p {
+                                                img {
+                                                    margin: 0 auto;
+                                                }
+                                            }
+                                            h4 {
+                                                font-size: 13px;
+                                                color: #2b2b2b;
+                                                font-weight: 500;
+                                                margin-bottom: 5px;
+                                                @include maven();
+                                            }
+                                            > ul {
+                                                margin-bottom: 30px;
+                                                @media(min-width: $sm) {
+                                                    margin-bottom: 0;
+                                                }
+                                                li {
+                                                    display: block;
+                                                    .amount {
+                                                        font-size: 12px;
+                                                        color: #666;
+                                                        font-weight: 300;
+                                                        line-height: 18px;
+                                                    }
+                                                    dl {
+                                                        dt {
+                                                            font-size: 12px;
+                                                            color: #666;
+                                                            font-weight: 300;
+                                                            line-height: 18px;
+                                                            display: inline-block;
+                                                        }
+                                                        dd {
+                                                            font-size: 12px;
+                                                            color: #666;
+                                                            font-weight: 300;
+                                                            line-height: 18px;
+                                                            display: inline-block;
+                                                        }
+                                                        &.c-dl {
+                                                            @include maven();
+                                                            dt {
+                                                                font-weight: 500;
+                                                                &:after {
+                                                                    content: ":";
+                                                                    padding-left: 5px;
+                                                                    padding-right: 2px;
+                                                                }
+                                                            }
+                                                            dd {
+                                                                font-weight: 500;
+                                                            }
+                                                        }
+                                                        &.qty {
+                                                            dt {
+                                                                &:after {
+                                                                    content: ".";
+                                                                    padding-right: 3px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .deposit {
+                                                font-size: 12px;
+                                                color: #666;
+                                                font-weight: 300;
+                                                @media(min-width: $sm) {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.i-item {
+                                        @media(min-width: $md) {
+                                            width: 40%;
+                                        }
+                                    }
+                                    &.i-status {
+                                        display: none;
+                                        @media(min-width: $sm) {
+                                            display: table-cell;
+                                            font-size: 12px;
+                                            color: #666;
+                                            font-weight: 300;
+                                        }
+                                        @media(min-width: $md) {
+                                            width: 30%;
+                                            text-align: center;
+                                        }
+                                    }
+                                    &.i-tracking {
+                                        display: none;
+                                        @media(min-width: $md) {
+                                            display: table-cell;
+                                            width: 30%;
+                                            text-align: center;
+                                            a {
+                                                font-size: 12px;
+                                                color: #666;
+                                                font-weight: 300;
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .total {
+                    margin-top: 30px;
+                    @media(min-width: $sm) {
+                        margin-top: 45px;
+                    }
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 70px;
+            p {
+                .btn-lg {
+                    width: 100%;
+                    color: #2b2b2b;
+                }
+            }
+            @media(min-width: $sm) {
+                margin-top: 40px;
+                p {
+                    text-align: right;
+                    .btn-lg {
+                        display: inline-block;
+                        width: 170px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* point */
+.point {
+    .my-point {
+        text-align: center;
+        .point-list {
+            li {
+                & + li {
+                    margin-top: 40px;
+                    @media(min-width: $sm) {
+                        margin-top: 45px;
+                    }
+                }
+                dl {
+                    dt {
+                        font-size: 13px;
+                        color: #666;
+                        line-height: 24px;
+                        font-weight: 400;
+                    }
+                    dd {
+                        line-height: 24px;
+                        a {
+                            font-size: 15px;
+                            color: #2b2b2b;
+                            font-weight: 400;
+                            &:hover, &:focus {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .attention {
+            font-size: 11px;
+            color: #666;
+            margin-top: 40px;
+            @media(min-width: $sm) {
+                font-size: 12px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+/* order-sucess */
+.order-sucess {
+    .order-info {
+        .page-header {
+            margin-bottom: 75px;
+        }
+        .sucess {
+            h3 {
+                font-size: 16px;
+                color: #2b2b2b;
+                margin-bottom: 55px;
+                text-align: center;
+            }
+            dl {
+                width: 265px;
+                display: block;
+                font-size: 0;
+                margin: 0 auto;
+                text-align: left;
+                dt {
+                    display: inline-block;                    
+                    width: 50%;
+                    font-size: 12px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                dd {
+                    display: inline-block;
+                    width: 50%;
+                    font-size: 12px;
+                    color: #666;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                @media(min-width: $sm) {
+                    width: 300px;
+                    dt {
+                        font-size: 13px;
+                    }
+                    dd {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 75px;
+            p {
+                .btn-lg {
+                    height: 40px;
+                    line-height: 38px;
+                }
+            }
+            @media(min-width: $sm) {
+                p {
+                    .btn-lg {
+                        width: 170px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 장바구니 주문서작성 공통 */
+.my-basket {
+    h3 {
+        font-size: 12px;
+        color: #2b2b2b;
+        margin-bottom: 10px;
+        @media(min-width: $sm) {
+            font-size: 13px;
+        }
+    }
+    .basket-list {
+        & > .basket-item {
+            display: table;
+            width: 100%;
+            padding: 22px 0;
+            border-bottom: 1px solid #dfdfdf;
+            &:first-child {
+                border-top: 1px solid #2b2b2b;
+            }
+            @media(min-width: $sm) {
+                padding: 30px 0;
+            }
+            @media(min-width: $md) {
+                padding: 35px 0;
+            }
+            > div {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .figure {
+                width: 50%;
+                @media(min-width: $sm) {
+                    width: 20%;
+                }
+                @media(min-width: $md) {
+                    width: 15%;
+                }
+                p {
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        max-width: 100px;
+                        height: auto;
+                    }
+                }
+            }
+            .details {
+                width: 50%;
+                padding-left: 20px;
+                @media(min-width: $sm) {
+                    width: 80%;
+                }
+                @media(min-width: $md) {
+                    width: 85%;
+                }
+                .details-content {
+                    .p-info {
+                        @media(min-width: $md) {
+                            width: 225px;
+                        }
+                        h4 {
+                            font-size: 13px;
+                            color: #2b2b2b;
+                            @include maven();
+                            line-height: 18px;
+                        }
+                        dl {
+                            dt {
+                                display: inline-block;
+                                font-size: 13px;
+                                color: #666;
+                                font-weight: 400;
+                                line-height: 18px;
+                                @include maven();
+                                &:after {
+                                    content: ":";
+                                    padding: 0 5px;
+                                }
+                            }
+                            dd {
+                                display: inline-block;
+                                font-size: 13px;
+                                color: #666;
+                                font-weight: 400;
+                                line-height: 18px;
+                                @include maven();
+                            }
+                        }
+                    }
+                    .quantity {
+                        > p {
+                            display: inline-block;
+                            font-size: 12px;
+                            color: #2b2b2b;
+                            font-weight: 400;
+                            padding-bottom: 5px;
+                            margin: 15px 0;
+                            border-bottom: 1px solid #ababab;
+                            @media(min-width: $sm) {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .price {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+        @media(min-width: $sm) {
+            & > .basket-item {
+                .details {
+                    > .details-content {
+                        > div {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .total {
+        margin-top: 70px;
+        @media(min-width: $sm) {
+            margin-top: 50px;
+        }
+    }
+}
+
+/* basket */
+.basket {
+    .basket-info {
+        .page-header {
+            margin-bottom: 70px;
+            @media(min-width: $sm) {
+                margin-bottom: 100px;
+            }
+        }
+        .my-basket {
+            .basket-list {
+                .basket-item {
+                    .details {
+                        .details-content {
+                            .edit {
+                                > a {
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    color: #666;
+                                    font-weight: 400;
+                                    & + a {
+                                        margin-left: 15px;
+                                        @media(min-width: $sm) {
+                                            margin-left: 35px;
+                                        }
+                                    }
+                                }
+                                @media(min-width: $sm) {
+                                    margin-left: 40px;
+                                }
+                            }
+                            .price {
+                                display: none;
+                                @media(min-width: $md) {
+                                    display: inline-block;
+                                    width: 370px;
+                                    text-align: right;
+                                    word-wrap: break-word;
+                                }
+                            }
+                        }
+                    }
+                }
+                @media(min-width: $sm) {
+                    & > .basket-item {
+                        .details {
+                            > .details-content {
+                                > div {
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .delete-all {
+                display: inline-block;
+                font-size: 13px;
+                color: #2b2b2b;
+                padding-bottom: 7px;
+                margin-top: 45px;
+                box-shadow: 0 1px 0 #d7d7d7;
+                border-bottom: 1px solid #ababab;
+                @media(min-width: $sm) {
+                    margin-top: 50px;
+                }
+            }
+            .total {
+                margin-top: 70px;
+                @media(min-width: $sm) {
+                    margin-top: 50px;
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 70px;
+            p {
+                .btn-lg {
+                    height: 40px;
+                    line-height: 38px;
+                }
+            }
+            @media(min-width: $sm) {
+                p {
+                    .btn-lg {
+                        width: 170px;
+                    }
+                }
+            }
+            @media(min-width: $md) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+/* order-input */
+.order-input {
+    .order-items {
+        .my-basket {
+            .basket-list {
+                .basket-item {
+                    .details {
+                        .details-content {
+                            .quantity {
+                                @media(min-width: $sm) {
+                                    margin-left: 190px;
+                                }
+                                @media(min-width: $md) {
+                                    margin-left: 105px;
+                                }
+                            }
+                            .price {
+                                @media(min-width: $sm) {
+                                    margin-left: 90px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .total {
+                margin-top: 30px;
+                @media(min-width: $sm) {
+                    margin-top: 45px;
+                }
+            }
+        }
+        .input-write {
+            h3 {
+                font-size: 12px;
+                color: #2b2b2b;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    font-size: 13px;
+                }
+            }
+            div  {
+                > div {
+                    > .table-wrap {
+                        .table {
+                            border-top: 1px solid #e9e9e9;
+                            tbody {
+                                tr {
+                                    &:first-child {
+                                        th {
+                                            padding-top: 25px;
+                                        }
+                                        td {
+                                            padding-top: 25px;
+                                        }
+                                    }
+                                    &:last-child {
+                                        th {
+                                            border-bottom: 1px solid #e9e9e9;
+                                            padding-bottom: 25px;
+                                        }
+                                        td {
+                                            border-bottom: 1px solid #e9e9e9;
+                                            padding-bottom: 25px;
+                                        }
+                                    }
+                                    th {
+                                        width: 25%;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        border: 0;
+                                        background: none;
+                                        color: #2b2b2b;
+                                        label {
+                                            color: #2b2b2b;
+                                        }
+                                        &.addr {
+                                            padding-top: 15px;
+                                            vertical-align: top;
+                                        }
+                                        &.email {
+                                            padding-top: 15px;
+                                            vertical-align: top;
+                                            @media(min-width: $sm) {
+                                                vertical-align: middle;
+                                                padding-top: 10px;
+                                            }
+                                        }
+                                        @media(min-width: $sm) {
+                                            width: 20%;
+                                        }
+                                        @media(min-width: $md) {
+                                            
+                                        }
+                                    }
+                                    td {
+                                        width: 75%;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        padding-right: 10px;
+                                        border: 0;
+                                        @media(min-width: $md) {
+                                            padding-right: 100px;
+                                        }
+                                        .form-group {
+                                            .form-control {
+                                                height: 30px;
+                                                padding: 5px;
+                                                @media(min-width: $sm) {
+                                                    width: 250px;
+                                                }
+                                            }
+                                        }
+                                        &.addr {
+                                            .form-group {
+                                                overflow: hidden;
+                                                .form-control {
+                                                    margin-bottom: 5px;
+                                                    &:first-child {
+                                                        float: left;
+                                                        width: 60%;
+                                                        margin-right: 10px;
+                                                        @media(min-width: $sm) {
+                                                           width: 175px; 
+                                                        }
+                                                    }
+                                                    @media(min-width: $sm) {
+                                                        width: 530px;
+                                                    }
+                                                    @media(min-width: $md) {
+                                                        width: 100%;
+                                                    }
+                                                    .btn-addr {
+                                                        float: left;
+                                                    }
+                                                    &:last-child {
+                                                        margin-bottom: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.email {
+                                            .form-group {
+                                                .form-control {
+                                                    @media(min-width: $sm) {
+                                                        display: inline-block;
+                                                    }
+                                                }
+                                                p {
+                                                    display: block;
+                                                    font-size: 11px;
+                                                    color: #666;
+                                                    font-weight: 300;
+                                                    line-height: 16px;
+                                                    margin-top: 10px;
+                                                    @media(min-width: $sm) {
+                                                        display: inline-block;
+                                                        margin-left: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.message {
+                                            .form-group {
+                                                .form-control {
+                                                    @media(min-width: $sm) {
+                                                        width: 530px;
+                                                    }
+                                                    @media(min-width: $md) {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        @media(min-width: $sm) {
+                                            width: 80%;
+                                        }
+                                        @media(min-width: $md) {
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .orderer {
+                margin-top: 80px;
+            }
+            .shipping {
+                margin-top: 60px;
+                h3 {
+                    display: block;
+                    @media(min-width: $sm) {
+                        display: inline-block;
+                    }
+                }
+                .new-addr {
+                    > label {
+                        font-size: 11px;
+                        color: #666;
+                        font-weight: 300;
+                        letter-spacing: -.5px;
+                        margin-bottom: 20px;
+                        display: inline-block;
+                        &:first-child {
+                            input {
+                                margin-right: 15px !important;
+                            }
+                        }
+                        input {
+                            margin: 0 !important;
+                            margin-top: 2px !important;
+                            margin-left: 5px !important;
+                        }
+                    }
+                    .btn-addr-2 {
+                        display: block;
+                        margin-bottom: 30px;
+                        .btn {
+                            width: 106px;
+                            height: 26px;
+                            font-size: 11px;
+                            line-height: 24px;
+                            color: #666;
+                            padding: 0;
+                            border-radius: 0;
+                            border: 1px solid #afafaf;
+                            background-color: #fff;
+                        }
+                    }
+                    @media(min-width: $sm) {
+                        display: inline-block;
+                        margin-left: 105px;
+                        label {
+                            display: inline-block;
+                            letter-spacing: 0;
+                            margin-bottom: 0;
+                            &:first-child {
+                                margin-right: 30px;
+                                input {
+                                    margin-right: 0 !important;
+                                }
+                            }
+                        }
+                        .btn-addr-2 {
+                            display: inline-block;
+                            margin-left: 10px;
+                            margin-bottom: 0;
+                            .btn {
+                                width: 80px;
+                                height: 20px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    @media(min-width: $md) {
+                        margin-left: 154px;
+                    }
+                    @media(min-width: $lg) {
+                        margin-left: 161px;
+                    }
+                }
+                .shipping-input {
+                    
+                }
+            }
+            .pay {
+                margin-top: 55px;
+                .pay-input {
+                    padding: 35px 0 20px;
+                    border-top: 1px solid #e9e9e9;
+                    border-bottom: 1px solid #e9e9e9;
+                    @media(min-width: $sm) {
+                        padding-bottom: 30px;
+                    }
+                    h5 {
+                        font-size: 11px;
+                        color: #2b2b2b;
+                        padding-left: 20px;
+                        margin-bottom: 40px;
+                        &.pay-title {
+                            margin-bottom: 25px;
+                            @media(min-width: $sm) {
+                                margin-bottom: 0;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 12px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 40px;
+                        padding-left: 50px;
+                        @media(min-width: $sm) {
+                            padding-left: 0;
+                        }
+                    }
+                    .total-pay {
+                        
+                    }
+                    .sale-pay {
+                        
+                    }
+                    .btn-coupon {
+                        .btn {
+                            width: 70px;
+                            height: 30px;
+                            font-size: 12px;
+                            text-align: center;
+                            color: #fff;
+                            line-height: 30px;
+                            padding: 0;
+                            border-radius: 0;
+                            border: 0;
+                            background-color: #2b2b2b;
+                        }
+                    }
+                    .pay-select {
+                        font-size: 0;
+                        padding-left: 20px;
+                        li {
+                            display: inline-block;
+                            width: 50%;
+                            margin-bottom: 15px;
+                            label {
+                                font-size: 11px;
+                                color: #666;
+                            }
+                        }
+                        @media(min-width: $sm) {
+                            padding-left: 0;
+                            li {
+                                margin-bottom: 0;
+                                input {
+                                    margin-top: 2px !important;
+                                }
+                                width: inherit;
+                                margin-right: 30px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 65px;
+                @media(min-width: $sm) {
+                    margin-top: 90px;
+                    p {
+                        .btn-lg {
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* qna-write */
+.qna-write {
+    .write-form {
+        .table-wrap {
+            .table {
+                border: 0;
+                tbody {
+                    tr {
+                        th {
+                            font-size: 11px;
+                            padding: 15px 0 15px 20px;
+                            vertical-align: top;
+                            background-color: #fff;
+                            border: 0;
+                            label {
+                                font-size: 11px;
+                                color: #2b2b2b;
+                                i {
+                                    font-size: 11px;
+                                    color: #999;
+                                    font-style: normal;
+                                }
+                                @media(min-width: $sm) {
+                                    font-size: 12px;
+                                    i {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        td {
+                            border: 0;
+                            padding: 5px 10px 5px 15px;
+                            .form-control {
+                                height: 30px;
+                                padding: 0 10px;
+                                @media(min-width: $sm) {
+                                    width: 250px;
+                                }
+                            }
+                            textarea {
+                                height: 230px;
+                                @media(min-width: $sm) {
+                                    height: 150px;
+                                }
+                            }
+                            &.file {
+                                font-size: 0;
+                                .form-control {
+                                    width: 79%;
+                                    display: inline-block;
+                                    @media(min-width: $sm) {
+                                        width: 250px;
+                                    }
+                                }
+                                label {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    margin-left: 5px;
+                                    i {
+                                        display: block;
+                                        width: 30px;
+                                        height: 30px;
+                                        font-size: 16px;
+                                        color: #fff;
+                                        text-align: center;
+                                        line-height: 26px;
+                                        background-color: #989898;
+                                        &:hover {
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                            @media(min-width: $sm) {
+                                padding-left: 30px;
+                                padding-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 40px;
+            @media(min-width: $sm) {
+                margin-top: 53px;
+            }
+        }
+    }
+}
+
+/* qna-list */
+.qna-list {
+    .table-wrap {
+        .table {
+            table-layout: fixed;
+            thead {
+                tr {
+                    th {
+                        font-size: 12px;
+                        color: #2b2b2b;
+                        font-weight: 500;
+                        text-align: center;
+                        padding: 15px 0;
+                        border: 0;
+                        border-bottom: 1px solid #ddd;
+                        &:nth-of-type(1) {
+                            width: 15%;
+                        }
+                        &:nth-of-type(2) {
+                            width: 40%;
+                        }
+                        &:nth-of-type(3) {
+                            width: 15%;
+                        }
+                        &:nth-of-type(4) {
+                            width: 30%;
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 13px;
+                            &:nth-of-type(1) {
+                                width: 15%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 50%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 15%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 20%;
+                            }
+                        }
+                        @media(min-width: $md) {
+                            &:nth-of-type(1) {
+                                width: 10%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 60%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 15%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        font-size: 11px;
+                        color: #666;
+                        text-align: center;
+                        padding: 20px 0;
+                        &.date {
+                            @include lato();
+                        }
+                        &.count {
+                            @include lato();
+                        }
+                        &.subject {
+                            text-align: left;
+                            padding-left: 5px;
+                            @media(min-width: $sm) {
+                                padding-left: 10px;
+                            }
+                            @media(min-width: $md) {
+                                padding-left: 40px;
+                            }
+                            a {
+                                font-size: 11px;
+                                display: block;
+                                overflow: hidden; 
+                                white-space: nowrap; 
+                                text-overflow: ellipsis; 
+                                color: #666;
+                                @media(min-width: $sm) {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        &:nth-of-type(1) {
+                            width: 15%;
+                        }
+                        &:nth-of-type(2) {
+                            width: 40%;
+                        }
+                        &:nth-of-type(3) {
+                            width: 15%;
+                        }
+                        &:nth-of-type(4) {
+                            width: 30%;
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 13px;
+                            &:nth-of-type(1) {
+                                width: 15%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 50%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 15%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 20%;
+                            }
+                        }
+                        @media(min-width: $md) {
+                            &:nth-of-type(1) {
+                                width: 10%;
+                            }
+                            &:nth-of-type(2) {
+                                width: 60%;
+                            }
+                            &:nth-of-type(3) {
+                                width: 15%;
+                            }
+                            &:nth-of-type(4) {
+                                width: 15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-area {
+        display: none;
+        @media(min-width: $sm) {
+            display: block;
+            margin-top: 20px;
+            p {
+                text-align: right;
+                .btn-xs {
+                    width: 100px;
+                    height: 34px;
+                    font-size: 12px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    .paging {
+        margin-top: 50px;
+        @media(min-width: $sm) {
+            margin-top: 30px;
+        }
+    }
+}
+
+/* qna-view */
+.qna-view {
+    .view {
+        @media(min-width: $md) {
+            position: relative;
+        }
+        .title {
+            font-size: 13px;
+            color: #2b2b2b;
+            font-weight: 400;
+            padding: 13px 10px;
+            border-top: 1px solid #2b2b2b;
+            border-bottom: 1px solid #dfdfdf;
+            @media(min-width: $sm) {
+                font-size: 16px;
+                padding: 26px 23px;
+            }
+        }
+        .view-content {
+            font-size: 11px;
+            color: #666;
+            line-height: 18px;
+            min-height: 165px;
+            padding: 35px 10px 60px;
+            border-bottom: 1px solid #dfdfdf;
+            @media(min-width: $sm) {
+                min-height: 190px;
+                font-size: 12px;
+                line-height: 24px;
+                padding-left: 23px;
+                padding-bottom: 100px;
+            }
+        }
+        .write-info {
+            border-bottom: 1px solid #dfdfdf;
+            padding: 15px 10px;
+            @media(min-width: $sm) {
+                padding: 20px 23px;
+            }
+            @media(min-width: $md) {
+                position: absolute;
+                top: 0;
+                right: 15px;
+                border: 0;
+                padding: 27px 0;
+            }
+            ul {
+                font-size: 0;
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    dl {
+                        font-size: 0;
+                        dt {
+                            display: inline-block;
+                            font-size: 11px;
+                            color: #666;
+                            font-weight: 400;
+                            margin-right: 10px;
+                        }
+                        dd {
+                            display: inline-block;
+                            font-size: 11px;
+                            color: #666;
+                            font-weight: 400;
+                        }
+                    }
+                    @media(min-width: $sm) {
+                        margin-right: 40px;
+                        dl {
+                            dt {
+                                font-size: 12px;
+                            }
+                            dd {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .file-info {
+            padding: 15px 10px;
+            border-bottom: 1px solid #dfdfdf;
+            @media(min-width: $sm) {
+                padding: 20px 23px;
+            }
+            dl {
+                overflow: hidden;
+                dt {
+                    float: left;
+                    width: 45%;
+                    font-size: 11px;
+                    color: #222;
+                    font-weight: 400;
+                    &:before {
+                        font-family: "fontello";
+                        content: "\E80D";
+                        color: #2b2b2b;
+                        margin-right: 18px;
+                    }
+                }
+                dd {
+                    float: left;
+                    width: 55%;
+                    font-weight: 400;
+                    a {
+                        font-size: 11px;
+                        color: #666;
+                        &:hover,&:focus {
+                            text-decoration: underline;
+                        }
+                        &:after {
+                            content: ",";
+                            padding-right: 5px;
+                        }
+                        &:last-child:after {
+                            content: "";
+                            padding: 0;
+                        }
+                    }
+                }
+                @media(min-width: $sm) {
+                    dt {
+                        font-size: 12px;
+                        width: 22%;
+                    }
+                    dd {
+                        width: 78%;
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                @media(min-width: $md) {
+                    dt {
+                        position: relative;
+                        width: 110px;
+                        &:after {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            content: "|";
+                            color: #d8d8d8;
+                        }
+                    }
+                    dd {
+                        padding-left: 35px;
+                    }
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 30px;
+            p {
+                .btn-xs {
+                    width: 145px;
+                    height: 40px;
+                    line-height: 38px;
+                    font-size: 11px;
+                    &.btn-color {
+                        color: #666;
+                        margin-left: 10px;
+                        border: 1px solid #aaa;
+                        background-color: #fff;
+                    }
+                    &.btn-none {
+                        display: none;
+                    }
+                }
+            }
+            @media(min-width: $sm) {
+                margin-top: 40px;
+                p {
+                    overflow: hidden;
+                    text-align: left;
+                    .btn-xs {
+                        width: 100px;
+                        height: 34px;
+                        line-height: 32px;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        &.btn-color {
+                            float: right;
+                            margin: 0;
+                            color: #fff;
+                            border-color: #2b2b2b;
+                            background-color: #2b2b2b;
+                        }
+                        &.btn-none {
+                            display: inline-block;;
+                        }
+                    }
+                }
+            }
+        }
+        .reply {
+            margin-top: 140px;
+            @media(min-width: $sm) {
+                margin-top: 80px;
+            }
+            .reply-form {
+                font-size: 0;
+                padding: 15px 10px;
+                border: 1px solid #e0e0e0;
+                background-color: #f1f1f1;
+                .reply-write {
+                    position: relative;
+                    .form-group {
+                        padding-right: 80px;
+                        .form-control {
+                            width: 100%;
+                            height: 30px;
+                            padding: 5px;
+                        }
+                    }
+                    .reply-btn {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        .btn-identify {
+                            width: 70px;
+                            height: 30px;
+                            font-size: 12px;
+                            color: #fff;
+                            border-radius: 0;
+                            background-color: #2b2b2b;
+                        }
+                    }
+                }
+                @media(min-width: $sm) {
+                    padding: 30px 40px;
+                    .reply-write {
+                        .form-group {
+                            padding-right: 110px;
+                            .form-control {
+                                height: 40px;
+                                padding: 10px;
+                            }
+                        }
+                        .reply-btn {
+                            .btn-identify {
+                                width: 100px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .reply-list {
+                margin-top: 45px;
+                @media(min-width: $sm) {
+                    margin-top: 30px;
+                }
+                > li {
+                    overflow: hidden;
+                    padding: 30px 0;
+                    border-bottom: 1px solid #dfdfdf;
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                    .u-name {
+                        float: left;
+                        font-size: 12px;
+                        color: #333;
+                        font-weight: 400;
+                        .date {
+                            font-size: 12px;
+                            color: #666;
+                            font-weight: 400;
+                            font-style: normal;
+                            margin-left: 15px;
+                            @include lato();
+                        }
+                        @media(min-width: $sm) {
+                            font-size: 13px;
+                            .date {
+                                font-size: 13px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    .modify-btn {
+                        float: right;
+                        font-size: 0;
+                        margin-top: -2px;
+                        > li {
+                            display: inline-block;
+                            font-size: 11px;
+                            color: #999;
+                            a {
+                                font-size: 11px;
+                                color: #999;
+                            }
+                            &:after {
+                                content: "|";
+                                padding: 0 10px;
+                            }
+                            &:last-child:after {
+                                content: "";
+                                padding: 0;
+                            }
+                            @media(min-width: $sm) {
+                                font-size: 12px;
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .reply-content {
+                        clear: both;
+                        font-size: 12px;
+                        color: #999;
+                        line-height: 18px;
+                        padding-top: 20px;
+                    }
+                    &.comment {
+                        position: relative;
+                        padding-left: 20px;
+                        &:before {
+                            position: absolute;
+                            top: 30px;
+                            left: 0;
+                            font-family: "fontello";
+                            content: "\E80E";
+                        }
+                        @media(min-width: $sm) {
+                            padding-left: 30px;
+                            &:before {
+                                top: 45px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* modify */
+.modify {
+    .page-header {
+        h2 {
+            @include lato();
+        }
+    }
+    .modify-form {
+        h3 {
+            overflow: hidden;
+            font-size: 12px;
+            color: #222;
+            font-weight: 400;
+            margin-bottom: 10px;
+            @media(min-width: $sm) {
+                font-size: 13px;
+            }
+        }
+        .input-form {
+            padding-top: 15px;
+            padding-bottom: 5px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            @media(min-width: $sm) {
+                padding-top: 25px;
+                padding-bottom: 15px;
+            }
+            label {
+                height: 30px;
+                font-size: 11px;
+                color: #2b2b2b;
+                font-weight: 300;
+                line-height: 30px;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                }
+            }
+            .defines {
+                height: 30px;
+                font-size: 11px;
+                color: #2b2b2b;
+                font-weight: 300;
+                line-height: 30px;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    font-size: 13px;
+                }
+            }
+            .form-control {
+                height: 30px;
+                margin-bottom: 10px;
+                @media(min-width: $sm) {
+                    width: 250px;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+            }
+            .addr {
+                overflow: hidden;
+                margin-bottom: 30px;
+                .form-control {
+                    clear: both;
+                    display: block;
+                    margin-bottom: 10px;
+                    &.addr-1 {
+                        float: left;
+                        width: 116px;
+                    }
+                }
+                .btn-addr {
+                    float: left;
+                    margin-left: 10px;
+                }
+                @media(min-width: $sm) {
+                    .form-control {
+                        width: 100%;
+                        margin-bottom: 5px;
+                        &.addr-1 {
+                            width: 169px;
+                        }
+                    }
+                }
+            }
+            .form-group {
+                .check {
+                    padding-left: 0;
+                    margin-left: 57px;
+                    @media(min-width: $sm) {
+                        margin-left: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .delete-link {
+            display: none;
+            @media(min-width: $sm) {
+                display: block;
+                margin-top: 35px;
+                a {
+                    font-size: 15px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #ababab;
+                    box-shadow: 0 1px 0 0 #d7d7d7;
+                }
+            }
+        }
+        .btn-area {
+            margin-top: 50px;
+            @media(min-width: $sm) {
+                margin-top: 80px;
+            }
+            @media(min-width: $md) {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+/* ordered-product */
+.ordered-product {
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+    > div {
+        width: 50%;
+        float: left;
+        &.product-img {
+            padding: 30px 20px;
+            text-align: center;
+            img {
+                display: inline-block;
+            }
+            @media(min-width: $sm) {
+                width: 23%;
+                text-align: left;
+            }
+        }
+        &.product-details {
+            padding: 30px 0 30px 20px;
+            .product-code {
+                font-size: 13px;
+                color: #2b2b2b;
+                line-height: 18px;
+                @include maven();
+            }
+            .inline-dl {
+                dt {
+                    line-height: 18px;
+                }
+                dd {
+                    line-height: 18px;
+                }
+            }
+            @media(min-width: $sm) {
+                width: 77%;
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
+/* table-dl */
+.table-dl {
+    overflow: hidden;
+    dt {
+        float: left;
+        clear: both;
+        width: 50%;
+        font-size: 12px;
+        color: #2b2b2b;
+        text-align: left;
+        font-weight: 400;
+        line-height: 25px;
+        padding-left: 20px;
+        background-color: #f8f8f8;
+        &.first {
+            padding-top: 5px;
+        }
+        &.last {
+            padding-bottom: 5px;
+        }
+        @media(min-width: $sm) {
+            width: 23%;
+        }
+    }
+    dd {
+        float: left;
+        width: 50%;
+        font-size: 12px;
+        color: #666;
+        text-align: left;
+        font-weight: 400;
+        line-height: 25px;
+        padding-left: 25px;
+        &.first {
+            padding-top: 5px;
+        }
+        &.last {
+            padding-bottom: 5px;
+        }
+        @media(min-width: $sm) {
+            width: 77%;
+            padding-left: 30px;
+        }
+    }
+}
+
+/* panel-group 주문정보 공통 */
+.payment {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @media(min-width: $lg) {
+        margin-bottom: 100px;
+    }
+    .sum-list {
+        overflow: hidden;
+        padding: 24px 0 19px;
+        background-color: #efefef;
+        @media(min-width: $sm) {
+            margin-right: -10px;
+        }
+        @media(min-width: $md) {
+            margin-right: -15px;
+        }
+        li {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+            &:nth-of-type(1) {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: 38%;
+                    right: -10px;
+                    color: #2b2b2b;
+                    content: "+";
+                    @media(min-width: $sm) {
+                        top: 63%;
+                    }
+                }
+            }
+            &:nth-of-type(2) {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: 37%;
+                    right: 0;
+                    color: #2b2b2b;
+                    content: "-";
+                    @media(min-width: $sm) {
+                        top: 62%;
+                    }
+                }
+            }
+            .sum {
+                dt {
+                    font-size: 12px;
+                    color: #666;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+                }
+                dd {
+                    font-size: 12px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .total {
+        text-align: center;
+        padding: 20px 0 18px;
+        background-color: #2b2b2b;
+        @media(min-width: $sm) {
+            margin-left: -10px;
+        }
+        @media(min-width: $md) {
+            margin-left: -15px;
+        }
+        dt {
+            font-size: 12px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        dd {
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+/* pw-confirm */
+.pw-confirm {
+    .pw-confirm-form {
+        width: 270px;
+        margin: 0 auto;
+        @media(min-width: $sm) {
+            width: 370px;
+        }
+        .user-id {
+            text-align: center;
+            font-size: 0;
+            margin-bottom: 25px;
+            dt {
+                display: inline-block;
+                font-size: 12px;
+                color: #666;
+                font-weight: 300;
+                @media(min-width: $sm) {
+                    font-size: 13px;
+                }
+                &:after {
+                    content: ":";
+                    padding: 0 5px;
+                }
+            }
+            dd {
+                display: inline-block;
+                font-size: 12px;
+                color: #666;
+                font-weight: 300;
+                @media(min-width: $sm) {
+                    font-size: 13px;
+                }
+            }
+        }
+        .form-group {
+            .form-control {
+                
+            }
+        }
+        .btn-area {
+            margin-top: 10px;
+            p {
+                .btn-lg {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

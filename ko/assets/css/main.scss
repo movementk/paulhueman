@@ -1,0 +1,522 @@
+@import 'common';
+
+// 비주얼 영역
+#visual {
+    .visible-xs {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// 캠페인 영역
+#campaign {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .campaign-item {
+        & + .campaign-item {
+            margin-top: 10px;
+        }
+        .visible-md {
+            width: 100%;
+        }
+        .visible-sm {
+            max-width: 100%;
+        }
+        .visible-xs {
+            width: 100%;
+        }
+    }
+    @media (min-width: $lg) {
+        margin-top: 65px;
+        padding-top: 0;
+        padding-bottom: 0;
+        .container {
+            position: relative;
+            height: 950px;
+        }
+        .campaign-item-1 {
+            margin-top: 60px;
+            width: 435px;
+        }
+        .campaign-item-2 {
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            width: 700px;
+        }
+        .campaign-item-3 {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 700px;
+        }
+    }
+}
+
+// 제품 영역
+#products {
+    margin-top: 20px;
+    .product-list {
+        a {
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            figure {
+                figcaption {
+                    @include lato();
+                    @include font(12px, 25px);
+                    color: #2b2b2b;
+                    text-align: center;
+                    letter-spacing: 1px;
+                }
+            }
+            &:hover, &:focus {
+                figure {
+                    figcaption {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .btn-more {
+        display: block;
+        margin: 30px auto 0;
+        max-width: 320px;
+        height: 45px;
+        text-align: center;
+        @include font(12px, 43px);
+        color: #666;
+        border: 1px solid #aaa;
+        &:hover, &:focus {
+            background-color: #aaa;
+            color: #fff;
+        }
+    }
+    @media (min-width: $sm) {
+        margin-top: 40px;
+        .product-list {
+            a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        }
+        .btn-more {
+            margin-top: 50px;
+            font-size: 13px;
+        }
+    }
+    @media (min-width: $lg) {
+        margin-top: 95px;
+        .product-list {
+            a {
+                padding-top: 0;
+                padding-bottom: 0;
+                figure {
+                    img {
+                        margin: 0 auto;
+                    }
+                    figcaption {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .btn-more {
+            display: none;
+        }
+        .bx-wrapper {
+            position: relative;
+            .bx-controls {
+                text-align: center;
+                .bx-pager {
+                    position: relative;
+                    z-index: 1;
+                    margin-top: -25px;
+                    display: inline-block;
+                    .bx-pager-item {
+                        display: inline;
+                        .bx-pager-link {
+                            float: left;
+                            margin: 0 5px;
+                            width: 15px;
+                            height: 15px;
+                            border: 1px solid #2b2b2b;
+                            border-radius: 50%;
+                            &.active {
+                                background-color: #2b2b2b;
+                            }
+                        }
+                    }
+                }
+                .bx-controls-direction {
+                    a {
+                        position: absolute;
+                        top: 50%;
+                        font-size: 36px;
+                        color: #d3d3d3;
+                        &:hover, &:focus {
+                            color: #333;
+                        }
+                        &.bx-prev {
+                            left: 0;
+                            margin-top: -25px;
+                        }
+                        &.bx-next {
+                            right: 0;
+                            margin-top: -25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 다이어리 영역
+#diary {
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #f6f6f6;
+    .diary-item {
+        .details {
+            padding: 20px 10px;
+            text-align: center;
+            line-height: 22px;
+            small {
+                @include maven();
+                color: #a67c52;
+                letter-spacing: 1px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            h5 {
+                font-size: 15px;
+                color: #000;
+            }
+            p {
+                margin-top: 20px;
+                color: #666;
+                @include font(12px, 20px);
+                font-weight: 300;
+            }
+            .btn-more {
+                display: block;
+                margin: 20px auto 0;
+                max-width: 170px;
+                height: 45px;
+                border: 1px solid #aaa;
+                @include font(13px, 43px);
+                color: #666;
+                &:hover, &:focus {
+                    background-color: #aaa;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .bx-wrapper {
+        .bx-controls {
+            text-align: center;
+            .bx-pager {
+                display: inline-block;
+                .bx-pager-item {
+                    display: inline;
+                    .bx-pager-link {
+                        float: left;
+                        margin: 0 3px;
+                        width: 12px;
+                        height: 12px;
+                        border: 1px solid #2b2b2b;
+                        border-radius: 50%;
+                        &.active {
+                            background-color: #2b2b2b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: $sm) {
+        margin-top: 80px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        .diary-item {
+            .details {
+                padding: 35px 10px;
+                line-height: 22px;
+                small {
+                    font-size: 16px;
+                }
+                h5 {
+                    margin-top: 10px;
+                    font-size: 26px;
+                }
+                p {
+                    margin-top: 35px;
+                    @include font(15px, 22px);
+                }
+                .btn-more {
+                    margin: 35px auto 0;
+                    font-size: 14px;
+                }
+            }
+        }
+        .bx-wrapper {
+            .bx-pager-link {
+                margin: 0 5px !important;
+                width: 14px !important;
+                height: 14px !important;
+            }
+        }
+    }
+    @media (min-width: $md) {
+        margin-top: 120px;
+        padding-top: 0;
+        padding-bottom: 0;
+        .diary-item {
+            &:nth-of-type(odd) {
+                .figure {
+                    margin-right: -15px;
+                }
+                .details {
+                    margin-left: -15px;
+                }
+            }
+            &:nth-of-type(even) {
+                .figure {
+                    margin-left: -15px;
+                }
+                .details {
+                    margin-right: -15px;
+                }
+            }
+            .figure {
+                height: 390px;
+            }
+            .details {
+                display: table;
+                padding: 0 30px;
+                height: 390px;
+                > div {
+                    display: table-cell;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+                p {
+                    margin-top: 50px;
+                }
+                .btn-more {
+                    margin-top: 55px;
+                }
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        .diary-item {
+            .figure {
+                height: 485px;
+            }
+            .details {
+                padding: 0 40px;
+                height: 485px;
+            }
+        }
+    }
+}
+
+// SNS 영역
+#social {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e8ebf4;
+    ul {
+        margin-left: -3px;
+        margin-right: -3px;
+        li {
+            padding-left: 3px;
+            padding-right: 3px;
+            a {
+                .figure {
+                    position: relative;
+                    h5 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #fff;
+                        text-align: center;
+                        line-height: 18px;
+                    }
+                }
+                .details {
+                    display: none;
+                }
+                &.instagram {
+                    .figure {
+                        h5 {    
+                            &:before {
+                                font-family: 'fontello';
+                                content: '\F16D';
+                                color: #555;
+                            }
+                        }
+                    }
+                }
+                &.blog {
+                    .figure {
+                        h5 {
+                            background-image: url(/ko/assets/images/ico_blog.svg);
+                            background-position: 50% 50%;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                &.facebook {
+                    .figure {
+                        h5 {    
+                            &:before {
+                                font-family: 'fontello';
+                                content: '\F09A';
+                                color: #555;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: $sm) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        ul {
+            margin-left: -10px;
+            margin-right: -10px;
+            li {
+                padding-left: 10px;
+                padding-right: 10px;
+                a {
+                    .figure {
+                        h5 {
+                            width: 42px;
+                            height: 42px;
+                            line-height: 40px;
+                            font-size: 20px;
+                        }
+                    }
+                    &.blog {
+                        .figure {
+                            h5 {    
+                                background-size: 14px auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        padding-top: 95px;
+        padding-bottom: 95px;
+        ul {
+            margin-left: -15px;
+            margin-right: -15px;
+            li {
+                padding-left: 15px;
+                padding-right: 15px;
+                a {
+                    .figure {
+                        h5 {
+                            position: absolute;
+                            left: 50%;
+                            bottom: -30px;
+                            top: inherit;
+                            width: 60px;
+                            height: 60px;
+                            margin-left: -30px;
+                            font-size: 27px;
+                            line-height: 58px;
+                        }
+                    }
+                    .details {
+                        display: block;
+                        padding: 50px 20px 35px;
+                        height: 130px;
+                        background-color: #fff;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #666;
+                        font-weight: 300;
+                        .author {
+                            font-weight: bold;
+                        }
+                        p {
+                            display: inline;
+                        }
+                    }
+                    &.blog {
+                        .figure {
+                            h5 {    
+                                background-size: 18px auto;
+                            }
+                        }
+                    }
+                    &:hover, &:focus {
+                        .details {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* search-result */
+.search-result {
+    .g-list {
+        .lnb {
+            display: none;
+            @media(min-width: $lg) {
+                display: block;
+            }
+        }
+        .page-header {
+            h2 {
+                font-size: 15px;
+                color: #666;
+                @media(min-width: $sm) {
+                    font-size: 16px;
+                }
+            }
+            .result-count {
+                font-size: 12px;
+                color: #acacac;
+                b {
+                    color: #666;
+                }
+                @media(min-width: $sm) {
+                    text-align: left;
+                }
+            }
+        }
+        .result-txt {
+            text-align: center;
+            font-size: 11px;
+            color: #acacac;
+            line-height: 18px;
+            @media(min-width: $sm) {
+                font-size: 12px;
+            }
+        }
+        .glasses-list {
+            
+            .glasses-item {
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import 'common';
+
+.story {
+    .figure {
+        margin-top: 35px;
+        img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        @media(min-width: $md) {
+            margin-top: 0;
+        }
+    }
+    .figcaption {
+        margin-top: 60px;
+        h2 {
+            font-size: 26px;
+            color: #3f2a13;
+            font-weight: bold;
+            margin-bottom: 30px;
+            @include jjmj();
+            @media(min-width: $sm) {
+                font-size: 36px;
+                padding-left: 36px;
+            }
+            @media(min-width: $md) {
+                padding: 0;
+            }
+        }
+        p {
+            font-size: 11px;
+            color: #2b2b2b;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            @media(min-width: $sm) {
+                display: inline-block;
+                font-size: 14px;
+            }
+            @media(min-width: $md) {
+                display: block;
+            }
+        }
+        @media(min-width: $sm) {
+            text-align: center;
+            margin-top: 85px;
+        }
+        @media(min-width: $md) {
+            margin-top: 0;
+            text-align: left;
+            padding-left: 60px;
+            padding-top: 220px;
+        }
+        @media(min-width: $lg) {
+            padding-top: 250px;
+        }
+    }
+}
