@@ -64,14 +64,14 @@
         <div class="container">
             <ul class="row">
                 <li class="col-sm-3 col-lg-2 col-lg-offset-2">
-                    <a href="/ko/story/story.php">STORY</a>
-                </li>
-                <li class="col-sm-3 col-lg-2">
                     <a href="/ko/shop/sunglasses_list.php">SHOP</a>
                     <ul class="visible-lg">
                         <li><a href="/ko/shop/sunglasses_list.php">Sunglasses</a></li>
                         <li><a href="/ko/shop/glasses_list.php">Glasses</a></li>
                     </ul>
+                </li>
+                <li class="col-sm-3 col-lg-2">
+                    <a href="/ko/story/story.php">BRAND</a>
                 </li>
                 <li class="col-sm-3 col-lg-2">
                     <a href="/ko/campaign/diary_list.php">CAMPAIGN</a>

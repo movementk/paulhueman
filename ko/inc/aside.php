@@ -14,16 +14,16 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="#">STORY</a>
-                        <ul>
-                            <li><a href="/ko/story/story.php">STORY</a></li>
-                        </ul>
-                    </li>
-                    <li>
                         <a href="#">SHOP</a>
                         <ul>
                             <li><a href="/ko/shop/sunglasses_list.php">SUNGLASSES</a></li>
                             <li><a href="/ko/shop/glasses_list.php">GLASSES</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">BRAND</a>
+                        <ul>
+                            <li><a href="/ko/story/story.php">STORY</a></li>
                         </ul>
                     </li>
                     <li>
@@ -32,7 +32,12 @@
                             <li><a href="/ko/campaign/diary_list.php">DIARY</a></li>
                             <li><a href="/ko/campaign/celeb_list.php">CELEB</a></li>
                             <li><a href="/ko/campaign/video_list.php">VIDEO</a></li>
-                            <li><a href="/ko/campaign/look_book.php">LOOKBOOK</a></li>
+                            <li>
+                                <a href="/ko/campaign/look_book.php">LOOKBOOK</a>
+                                <ul>
+                                    <li><a href="#">2017SS</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -59,9 +64,15 @@
                 </div>
                 <div class="sns">
                     <ul>
-                        <li class="instagram"><a href="#"><span class="sr-only">인스타그램</span></a></li>
-                        <li class="blog"><a href="#"><span class="sr-only">블로그</span></a></li>
-                        <li class="facebook"><a href="#"><span class="sr-only">페이스북</span></a></li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/paulhueman" target="_blank"><span class="sr-only">인스타그램</span></a>
+                        </li>
+                        <li class="blog">
+                            <a href="http://blog.naver.com/bandooptical" target="_blank"><span class="sr-only">블로그</span></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/paulhueman" target="_blank"><span class="sr-only">페이스북</span></a>
+                        </li>
                     </ul>
                 </div>
             </nav>
