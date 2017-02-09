@@ -58,23 +58,32 @@
 #products {
     margin-top: 20px;
     .product-list {
-        a {
-            display: block;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            figure {
-                figcaption {
-                    @include lato();
-                    @include font(12px, 25px);
-                    color: #2b2b2b;
-                    text-align: center;
-                    letter-spacing: 1px;
-                }
-            }
-            &:hover, &:focus {
+        overflow: hidden;
+        margin-left: -5px;
+        margin-right: -5px;
+        li {
+            float: left;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 50%;
+            a {
+                display: block;
+                padding-top: 15px;
+                padding-bottom: 15px;
                 figure {
                     figcaption {
-                        text-decoration: underline;
+                        @include lato();
+                        @include font(12px, 25px);
+                        color: #2b2b2b;
+                        text-align: center;
+                        letter-spacing: 1px;
+                    }
+                }
+                &:hover, &:focus {
+                    figure {
+                        figcaption {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
@@ -97,9 +106,15 @@
     @media (min-width: $sm) {
         margin-top: 40px;
         .product-list {
-            a {
-                padding-top: 25px;
-                padding-bottom: 25px;
+            margin-left: -10px;
+            margin-right: -10px;
+            li {
+                padding-left: 10px;
+                padding-right: 10px;
+                a {
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                }
             }
         }
         .btn-more {
@@ -107,18 +122,37 @@
             font-size: 13px;
         }
     }
+    @media (min-width: $md) {
+        .product-list {
+            margin-left: -15px;
+            margin-right: -15px;
+            li {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
     @media (min-width: $lg) {
+        overflow: hidden;
         margin-top: 95px;
         .product-list {
-            a {
-                padding-top: 0;
-                padding-bottom: 0;
-                figure {
-                    img {
-                        margin: 0 auto;
-                    }
-                    figcaption {
-                        display: none;
+            margin-left: inherit;
+            margin-right: inherit;
+            li {
+                float: none;
+                width: auto;
+                padding-left: inherit;
+                padding-right: inherit;
+                a {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    figure {
+                        img {
+                            margin: 0 auto;
+                        }
+                        figcaption {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -420,7 +454,7 @@
     }
     @media (min-width: $lg) {
         padding-top: 95px;
-        padding-bottom: 95px;
+        padding-bottom: 125px;
         ul {
             margin-left: -15px;
             margin-right: -15px;

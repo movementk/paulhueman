@@ -681,9 +681,11 @@ a {
           #header #gnb .container > ul > li > a {
             line-height: 48px; }
           #header #gnb .container > ul > li > ul {
-            height: 0;
             position: relative;
             overflow: hidden;
+            margin-left: 20px;
+            width: 125px;
+            height: 0;
             background-color: #fff;
             opacity: 0;
             transition: all .3s;

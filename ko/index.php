@@ -40,8 +40,8 @@
         </div>
         <div id="products">
             <div class="container">
-                <ul class="row product-list">
-                    <li class="col-xs-6">
+                <ul class="product-list">
+                    <li>
                         <a href="#">
                             <figure>
                                 <img class="img-responsive" src="/ko/assets/images/main/img_product_dummy.jpg">
@@ -49,7 +49,7 @@
                             </figure>
                         </a>
                     </li>
-                    <li class="col-xs-6">
+                    <li>
                         <a href="#">
                             <figure>
                                 <img class="img-responsive" src="/ko/assets/images/main/img_product_dummy.jpg">
@@ -57,7 +57,7 @@
                             </figure>
                         </a>
                     </li>
-                    <li class="col-xs-6">
+                    <li>
                         <a href="#">
                             <figure>
                                 <img class="img-responsive" src="/ko/assets/images/main/img_product_dummy.jpg">
@@ -65,7 +65,7 @@
                             </figure>
                         </a>
                     </li>
-                    <li class="col-xs-6">
+                    <li>
                         <a href="#">
                             <figure>
                                 <img class="img-responsive" src="/ko/assets/images/main/img_product_dummy.jpg">
@@ -133,36 +133,26 @@
             <div class="container">
                 <ul class="row">
                     <li class="col-xs-4">
-                        <a class="instagram" href="#">
+                        <a class="instagram" href="https://www.instagram.com/paulhueman" target="_blank">
                             <div class="figure">
                                 <h5><span class="sr-only">인스타그램</span></h5>
                                 <p><img class="img-responsive" src="/ko/assets/images/main/img_social_insta.jpg" alt=""></p>
                             </div>
-                            <div class="details">
-                                <span class="author">movementk</span>
-                                <p>#성유리 #화보 #넘나 #예쁜것  #폴휴먼 #사러가야지 #스타일 #좋다</p>
-                            </div>
                         </a>
                     </li>
                     <li class="col-xs-4">
-                        <a class="blog" href="#">
+                        <a class="blog" href="http://blog.naver.com/bandooptical" target="_blank">
                             <div class="figure">
                                 <h5><span class="sr-only">블로그</span></h5>
                                 <p><img class="img-responsive" src="/ko/assets/images/main/img_social_blog.jpg" alt=""></p>
                             </div>
-                            <div class="details">
-                                <p>배우 서강준, “’치인트’ 속 제 외모는 박해진, 남주혁에 이어 3위”</p>
-                            </div>
                         </a>
                     </li>
                     <li class="col-xs-4">
-                        <a class="facebook" href="#">
+                        <a class="facebook" href="https://www.facebook.com/paulhueman" target="_blank">
                             <div class="figure">
                                 <h5><span class="sr-only">페이스북</span></h5>
                                 <p><img class="img-responsive" src="/ko/assets/images/main/img_social_facebook.jpg" alt=""></p>
-                            </div>
-                            <div class="details">
-                                <p>젊은 사람들이 추구하는 감성과 요소의 트랜드를 이끌어 온 폴휴먼 안경은 2009년 2월에 런칭하여...</p>
                             </div>
                         </a>
                     </li>
@@ -177,30 +167,38 @@
         (function($) {
             
             // 제품 슬라이더
-            var productSlider = $('#products .product-list').bxSlider({
+            var productOpt = {
                 nextText: '<span class="sr-only">다음</span><i class="icon-right-small"></i>',
                 prevText: '<span class="sr-only">이전</span><i class="icon-left-small"></i>',
                 buildPager: function(slideIndex) {
                     return '<span class="sr-only">'+slideIndex+'<span>'
                 }
-                
-            });
+            };
+            var productSlider = $('#products .product-list').bxSlider(productOpt);
             
             //다이어리 슬라이더
-            var diarySlider = $('#diary .diary-list').bxSlider({
+            var diaryOpt = {
                 controls: false,
                 buildPager: function(slideIndex) {
                     return '<span class="sr-only">'+slideIndex+'<span>'
                 }
-            });
+            };
+            var diarySlider = $('#diary .diary-list').bxSlider(diaryOpt);
             
             $(window).on('load resize', function() {
-                if ($('body').width() >= 1280) {
-                    productSlider.reloadSlider();
-                } else {
-                    productSlider.destroySlider();
+                // 제품 슬라이드 반응형
+                if (productSlider) {
+                    productSlider = productSlider.destroySlider();
                 }
-                if ($('body').innerWidth() >= 992) {
+                if ( $(this).width() >= 1280) {
+                    if (productSlider) {
+                        productSlider = productSlider.reloadSlider(productOpt);
+                    } else {
+                        productSlider = $('#products .product-list').bxSlider(productOpt);
+                    }
+                }
+                // 다이어리 슬라이드 반응형
+                if ($(this).width() >= 992) {
                     diarySlider.destroySlider();
                 } else {
                     diarySlider.reloadSlider();
