@@ -378,8 +378,8 @@ textarea {
                 border: 1px solid #aaa;
                 @include lato();
             }
-            &.active {
-                a {
+            > &.active {
+                > a {
                     color: #fff;
                     border-color: #2b2b2b;
                     background-color: #2b2b2b;
@@ -414,10 +414,26 @@ textarea {
                     line-height: 25px;
                 }
                 &.active {
-                    a {
+                    > a {
                         color: #2b2b2b;
                         background: none;
                         border-bottom: 2px solid #aaa;
+                    }
+                    > ul {
+                        > li {
+                            > a {
+                                border-bottom: 0;
+                                &:before {
+                                    content: "-";
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                        > .active {
+                            > a { 
+                                border-bottom: 0;
+                            }
+                        }
                     }
                 }
             }

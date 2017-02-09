@@ -22,78 +22,65 @@
                         <div class="lnb">
                             <h2 class="visible-lg">CAMPAIGN</h2>
                             <ul>
-                                <li><a href="#">DIARY</a></li>
+                                <!-- 2017-02-09 순서변경 , video 하위메뉴 생성-->
                                 <li><a href="#">CELEB</a></li>
-                                <li class="active"><a href="#">VIDEO</a></li>
                                 <li><a href="#">LOOKBOOK</a></li>
+                                <li class="active">
+                                    <a href="#">VIDEO</a>
+                                    <ul>
+                                        <li class="active"><a href="#">2017SS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">DIARY</a></li>
                             </ul>
                         </div>
                     </div>
+                    <!-- 2017-02-09 전체 수정 -->
                     <div class="col-xs-12 col-lg-10">
                         <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <a href="/ko/campaign/video_view.php">
-                                        <figure>
-                                            <img src="/ko/assets/images/campaign/video_img01.jpg" class="img-responsive" alt="">
-                                            <figcaption>
-                                                What’s Your Sign?
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12">
-                                    <a href="/ko/campaign/video_view.php">
-                                        <figure>
-                                            <img src="/ko/assets/images/campaign/video_img02.jpg" class="img-responsive" alt="">
-                                            <figcaption>
-                                                What’s Your Sign?
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12">
-                                    <a href="/ko/campaign/video_view.php">
-                                        <figure>
-                                            <img src="/ko/assets/images/campaign/video_img03.jpg" class="img-responsive" alt="">
-                                            <figcaption>
-                                                What’s Your Sign?
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12">
-                                    <a href="/ko/campaign/video_view.php">
-                                        <figure>
-                                            <img src="/ko/assets/images/campaign/video_img04.jpg" class="img-responsive" alt="">
-                                            <figcaption>
-                                                What’s Your Sign?
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12">
-                                    <a href="/ko/campaign/video_view.php">
-                                        <figure>
-                                            <img src="/ko/assets/images/campaign/video_img05.jpg" class="img-responsive" alt="">
-                                            <figcaption>
-                                                What’s Your Sign?
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="col-xs-12">
-                                    <a href="/ko/campaign/video_view.php">
-                                        <figure>
-                                            <img src="/ko/assets/images/campaign/video_img06.jpg" class="img-responsive" alt="">
-                                            <figcaption>
-                                                What’s Your Sign?
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
+                            <ul class="row">
+                                <li class="col-xs-12">
+                                    <div class="play-view">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_mCJXVKksmw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                        <p>What’s Your Sign?</p>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12">
+                                    <div class="play-view">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_mCJXVKksmw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                        <p>What’s Your Sign?</p>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12">
+                                    <div class="play-view">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_mCJXVKksmw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                        <p>What’s Your Sign?</p>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12">
+                                    <div class="play-view">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_mCJXVKksmw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                        <p>What’s Your Sign?</p>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12">
+                                    <div class="play-view">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_mCJXVKksmw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                        <p>What’s Your Sign?</p>
+                                    </div>
+                                </li>
                             </div>
-                        </div>
+                        </ul>
                         <div class="btn-area">
                             <p>
                                 <button type="button" class="btn btn-lg btn-white">더보기</button>

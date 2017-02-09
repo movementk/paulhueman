@@ -12,12 +12,13 @@
                 <ol class="breadcrumb">
                     <li><a href="/ko/"><i class="icon-home"></i></a></li>
                     <li><a href="#">SHOP</a></li>
-                    <li class="active">SUNGLASSES</li>
+                    <li class="active">GLASSES</li>
                 </ol>
             </div>
             <div class="g-view glasses-view">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-lg-2">
+                    <!-- 2017-02-09 col-lg-2 = 1로 변경 , visible-lg class 추가 -->
+                    <div class="col-xs-12 col-sm-12 col-lg-2 visible-lg">
                         <div class="lnb">
                             <h2 class="visible-lg">SHOP</h2>
                             <ul>
@@ -36,13 +37,19 @@
                             <h3 class="product-name">PHS-1089D Col.5</h3>
                             <p class="amount">255,000 won</p>
                             <div class="form-group">
-                                <a href="#" class="btn count-up" role="button">+</a>
+                                <!-- 2017-02-09 + , - 위치 변경 및 위시리스트 아이콘버튼 추가 -->
+                                <a href="#" class="btn count-dwon" role="button">-</a>
                                 <input type="text" id="product-count" class="form-control" value="1">
-                                <a href="#" class="btn count-down" role="button">-</a>
+                                <a href="#" class="btn count-up" role="button">+</a>
                                 <label for="product-count" class="sr-only">상품개수</label>
                                 <p class="cart">
                                     <button type="button" class="cart-btn">
                                         <span class="sr-only">장바구니담기</span>
+                                    </button>
+                                </p>
+                                <p class="wish">
+                                    <button type="button" class="wish-btn">
+                                        <span class="sr-only">위시리스트</span>
                                     </button>
                                 </p>
                             </div>
@@ -71,6 +78,14 @@
                                         <dd>TR</dd>
                                     </dl>
                                 </li>
+                                <!-- 2017-02-09 COLOR 제거요청 
+                                <li>
+                                    <dl class="inline-dl">
+                                        <dt>COLOR</dt>
+                                        <dd></dd>
+                                    </dl>
+                                </li>
+                                -->
                             </ul>
                             <div class="btn-area">
                                 <p>

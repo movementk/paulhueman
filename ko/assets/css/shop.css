@@ -31,16 +31,16 @@ address {
     .g-view {
       padding-bottom: 300px; } }
   .g-view .lnb {
-    margin-bottom: 65px; }
-    @media (min-width: 768px) {
-      .g-view .lnb {
-        margin-bottom: 80px; } }
+    display: none; }
     @media (min-width: 1280px) {
       .g-view .lnb {
-        margin-bottom: 0; } }
+        display: block; } }
   .g-view .product-img {
     margin-top: 100px;
     padding: 0 5px; }
+    @media (min-width: 992px) {
+      .g-view .product-img .img-responsive {
+        max-width: 650px; } }
     .g-view .product-img.product-front {
       margin-top: 0;
       margin-bottom: 30px; }
@@ -127,7 +127,6 @@ address {
         display: inline-block;
         vertical-align: top;
         margin-left: 10px;
-        height: 20px;
         height: 20px; }
         .g-view .product-details-wrap .product-details .form-group .cart .cart-btn {
           display: block;
@@ -138,6 +137,21 @@ address {
             font-size: 15px;
             font-family: "fontello";
             content: "\E80F";
+            color: #2b2b2b; }
+      .g-view .product-details-wrap .product-details .form-group .wish {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 10px;
+        height: 20px; }
+        .g-view .product-details-wrap .product-details .form-group .wish .wish-btn {
+          display: block;
+          padding: 0;
+          background: none;
+          border: 0; }
+          .g-view .product-details-wrap .product-details .form-group .wish .wish-btn:before {
+            font-size: 15px;
+            font-family: "fontello";
+            content: "\E811";
             color: #2b2b2b; }
     .g-view .product-details-wrap .product-details .summary-list li .inline-dl dt {
       font-size: 10px;
