@@ -76,10 +76,11 @@
                 <li class="col-sm-3 col-lg-2">
                     <a href="/ko/campaign/diary_list.php">CAMPAIGN</a>
                     <ul class="visible-lg">
-                        <li><a href="/ko/campaign/diary_list.php">DIARY</a></li>
+                        <!-- 2017-02-09 순서변경 -->
                         <li><a href="/ko/campaign/celeb_list.php">CELEB</a></li>
-                        <li><a href="/ko/campaign/video_list.php">VIDEO</a></li>
                         <li><a href="/ko/campaign/look_book.php">LOOKBOOK</a></li>
+                        <li><a href="/ko/campaign/video_list.php">VIDEO</a></li>
+                        <li><a href="/ko/campaign/diary_list.php">DIARY</a></li>
                     </ul>
                 </li>
                 <li class="col-sm-3 col-lg-2">
@@ -88,6 +89,7 @@
             </ul>
         </div>
     </nav>
+    <!-- 추가된 항목 모바일 테블릿 검색폼 -->
     <div class="search-global">
         <div class="container">
             <div class="search-form">

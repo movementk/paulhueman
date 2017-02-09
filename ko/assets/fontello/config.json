@@ -167,6 +167,12 @@
       "css": "phone",
       "code": 59408,
       "src": "elusive"
+    },
+    {
+      "uid": "f3dc2d6d8fe9cf9ebff84dc260888cdf",
+      "css": "heart-empty",
+      "code": 59409,
+      "src": "fontawesome"
     }
   ]
 }

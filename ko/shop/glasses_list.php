@@ -17,7 +17,8 @@
             </div>
             <div class="g-list glasses-list">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-2">
+                    <!-- 2017-02-09 col-lg-2 = 1로 변경, visible-lg class 추가 -->
+                    <div class="col-xs-12 col-lg-1 visible-lg">
                         <div class="lnb">
                             <h2 class="visible-lg">SHOP</h2>
                             <ul>
@@ -26,7 +27,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-10">
+                    <!-- 2017-02-09 col-lg-10 = 11로 변경 -->
+                    <div class="col-xs-12 col-lg-11">
                         <div class="glasses-list">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4">

@@ -338,7 +338,7 @@ textarea {
       text-align: center;
       border: 1px solid #aaa;
       font-family: 'Lato', sans-serif; }
-    .lnb ul li.active a {
+    > .lnb ul li.active > a {
       color: #fff;
       border-color: #2b2b2b;
       background-color: #2b2b2b; }
@@ -365,10 +365,17 @@ textarea {
           font-size: 12px;
           border: 0;
           line-height: 25px; }
-        .lnb ul li.active a {
+        .lnb ul li.active > a {
           color: #2b2b2b;
           background: none;
-          border-bottom: 2px solid #aaa; } }
+          border-bottom: 2px solid #aaa; }
+        .lnb ul li.active > ul > li > a {
+          border-bottom: 0; }
+          .lnb ul li.active > ul > li > a:before {
+            content: "-";
+            padding-right: 5px; }
+        .lnb ul li.active > ul > .active > a {
+          border-bottom: 0; } }
 
 /* glasses-list */
 .glasses-list {

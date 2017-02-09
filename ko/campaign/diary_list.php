@@ -21,10 +21,11 @@
                         <div class="lnb">
                             <h2 class="visible-lg">CAMPAIGN</h2>
                             <ul>
-                                <li class="active"><a href="#">DIARY</a></li>
+                                <!-- 2017-02-09 순서변경 -->
                                 <li><a href="#">CELEB</a></li>
-                                <li><a href="#">VIDEO</a></li>
                                 <li><a href="#">LOOKBOOK</a></li>
+                                <li><a href="#">VIDEO</a></li>
+                                <li class="active"><a href="#">DIARY</a></li>
                             </ul>
                         </div>
                     </div>

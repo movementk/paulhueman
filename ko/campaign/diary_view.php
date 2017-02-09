@@ -21,18 +21,21 @@
                         <div class="lnb">
                             <h2 class="visible-lg">CAMPAIGN</h2>
                             <ul>
-                                <li class="active"><a href="#">DIARY</a></li>
+                                <!-- 2017-02-09 순서변경 -->
                                 <li><a href="#">CELEB</a></li>
-                                <li><a href="#">VIDEO</a></li>
                                 <li><a href="#">LOOKBOOK</a></li>
+                                <li><a href="#">VIDEO</a></li>
+                                <li class="active"><a href="#">DIARY</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-10">
+                        <!-- 2017-02-09 page-header 제거
                         <div class="page-header">
                             <h2>WHAT'S YOUR SIGN?</h2>
                             <p class="font-lato">2016.01.01</p>
                         </div>
+                        -->
                         <figure class="details-img">
                             <img src="/ko/assets/images/campaign/view_img01.jpg" class="img-responsive" alt="상세이미지">
                             <figcaption>

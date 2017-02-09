@@ -21,10 +21,16 @@
                         <div class="lnb">
                             <h2 class="visible-lg">CAMPAIGN</h2>
                             <ul>
-                                <li><a href="#">DIARY</a></li>
+                                <!-- 2017-02-09 순서변경 , lookbook 하위메뉴 생성 -->
                                 <li><a href="#">CELEB</a></li>
+                                <li class="active">
+                                    <a href="#">LOOKBOOK</a>
+                                    <ul>
+                                        <li class="active"><a href="#">2017SS</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">VIDEO</a></li>
-                                <li class="active"><a href="#">LOOKBOOK</a></li>
+                                <li><a href="#">DIARY</a></li>
                             </ul>
                         </div>
                     </div>
