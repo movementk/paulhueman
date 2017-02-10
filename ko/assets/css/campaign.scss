@@ -22,19 +22,6 @@
     .glasses-list {
         .row {
             > div {
-                @media(min-width: $sm) {
-                    &:nth-of-type(2n + 1) {
-                        clear: both;
-                    }
-                }
-                @media(min-width: $md ) {
-                    &:nth-of-type(2n + 1) {
-                        clear: none;
-                    }
-                    &:nth-of-type(3n + 1) {
-                        clear: both;
-                    }
-                }
                 &.none-sm {
                     display: none;
                     @media(min-width: $sm) {
@@ -64,15 +51,28 @@
                                 margin: 0 auto;
                             }
                             figcaption {
-                                font-size: 12px;
+                                margin-top: 10px;
+                                font-size: 14px;
                                 color: #2b2b2b;
                                 font-weight: 400;
                                 line-height: 25px;
                                 text-align: center;
-                                margin-top: 30px;
                                 @include lato();
                             }
                         }
+                    }
+                }
+                @media(min-width: $sm) {
+                    &:nth-of-type(2n + 1) {
+                        clear: both;
+                    }
+                }
+                @media(min-width: $md ) {
+                    &:nth-of-type(2n + 1) {
+                        clear: none;
+                    }
+                    &:nth-of-type(3n + 1) {
+                        clear: both;
                     }
                 }
             }
@@ -282,18 +282,16 @@
 /* lookbook */
 .look-book {
     .lookbook-head {
+        margin: 0 auto;
+        max-width: 300px;
         figure {
             img {
                 margin: 0 auto;
             }
             figcaption {
-                padding-top: 50px;
-                padding-bottom: 50px;
-                text-align: center;
-                h1 {
+                h5 {
                     @include lato();
-                    @include font(18px, 22px);
-                    font-weight: 300;
+                    @include font(12px, 25px);
                     color: #2b2b2b;
                 }
             }
@@ -306,14 +304,14 @@
             figure {
                 position: relative;
                 top: 50px;
+                padding-top: 75px;
                 opacity: 0;
                 -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
                 transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
                 figcaption {
                     h5 {
                         @include lato();
-                        @include font(11px, 25px);
-                        font-weight: 300;
+                        @include font(12px, 25px);
                         color: #2b2b2b;
                     }
                 }
@@ -321,12 +319,7 @@
                     top: 0;
                     opacity: 1;
                 }
-            }
-            & + .lookbook-item {
-                figure {
-                    padding-top: 75px;
-                }
-            }
+            }       
         }
     }
     .lookbook-foot {
@@ -345,12 +338,13 @@
     }
     @media (min-width: $sm) {
         .lookbook-head {
+            margin: auto;
+            max-width: none;
             figure {
                 figcaption {
-                    padding-top: 100px;
-                    padding-bottom: 100px;
-                    h1 {
-                        @include font(22px, 26px);
+                    h5 {
+                        @include font(12px, 25px);
+                        text-align: center;
                     }
                 }
             }
@@ -360,15 +354,11 @@
             max-width: none;
             .lookbook-item {
                 figure {
+                    padding-top: 115px;
                     figcaption {
                         h5 {
                             @include font(12px, 25px);
                         }
-                    }
-                }
-                & + .lookbook-item {
-                    figure {
-                        padding-top: 115px;
                     }
                 }
             }
@@ -443,10 +433,9 @@
         .lookbook-head {
             figure {
                 figcaption {
-                    padding-top: 75px;
-                    padding-bottom: 75px;
-                    h1 {
-                        @include font(23px, 27px);
+                    h5 {
+                        margin-top: 10px;
+                        @include font(14px, 25px);
                     }
                 }
             }
@@ -454,15 +443,12 @@
         .lookbook-body {
             .lookbook-item {
                 figure {
+                    padding-top: 150px;
                     figcaption {
                         h5 {
                             margin-top: 10px;
+                            @include font(14px, 25px);
                         }
-                    }
-                }
-                & + .lookbook-item {
-                    figure {
-                        padding-top: 150px;
                     }
                 }
             }

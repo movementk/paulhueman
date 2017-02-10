@@ -41,7 +41,7 @@
                                 <img class="img-responsive visible-sm" src="/ko/assets/images/campaign/img_lookbook_header_sm.jpg">
                                 <img class="img-responsive visible-lg visible-md" src="/ko/assets/images/campaign/img_lookbook_header_lg.jpg">
                                 <figcaption>
-                                    <h1>MODERN JOURNEY <br>LOOKBOOK #5 SUMMER 2017</h1>
+                                    <h5>PHS-168A Col.1A</h5>
                                 </figcaption>
                             </figure>
                         </div>
