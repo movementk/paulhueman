@@ -5,7 +5,7 @@
 <body class="sub stockists">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/ko/inc/header.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/ko/inc/aside.php'); ?>
-    <main id="content">
+    <main id="content" class="stockists-info">
         <div class="container">
             <div class="page-path">
                 <ol class="breadcrumb">
@@ -16,13 +16,30 @@
             <div class="page-header">
                 <h2>STOCKISTS</h2>
             </div>
+            <!-- 2017-02-13 수정사항 search 전체 수정 -->
             <div class="search">
                 <form action="#">
-                    <div class="form-group">
-                        <label class="sr-only" for="search">검색하기</label>
-                        <input class="form-control" id="search" type="text">
+                    <div class="select-form">
+                        <div class="form-group">
+                            <select>
+                                <option>광역시/도</option>
+                                <option>광역시/도</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option>군/구 선택</option>
+                                <option>군/구 선택</option>
+                            </select>
+                        </div>
                     </div>
-                    <button class="btn btn-search" type="submit"><span class="sr-only">검색</span></button>
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label class="sr-only" for="search">검색하기</label>
+                            <input class="form-control" id="search" type="text">
+                        </div>
+                        <button class="btn btn-search" type="submit"><span class="sr-only">검색</span></button>
+                    </div>
                 </form>
             </div>
             <div class="stockists-list">

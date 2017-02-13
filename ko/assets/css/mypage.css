@@ -574,9 +574,13 @@ address {
     @media (min-width: 992px) {
       .my-basket .basket-list > .basket-item .details {
         width: 85%; } }
+    @media (min-width: 768px) {
+      .my-basket .basket-list > .basket-item .details .details-content .p-info {
+        margin-right: 40px; } }
     @media (min-width: 992px) {
       .my-basket .basket-list > .basket-item .details .details-content .p-info {
-        width: 225px; } }
+        width: 225px;
+        margin-right: 0; } }
     .my-basket .basket-list > .basket-item .details .details-content .p-info h4 {
       font-size: 13px;
       color: #2b2b2b;
@@ -648,24 +652,28 @@ address {
   @media (min-width: 992px) {
     .basket .basket-info .my-basket .basket-list .basket-item .details .details-content .price {
       display: inline-block;
-      width: 370px;
+      width: 360px;
       text-align: right;
       word-wrap: break-word; } }
 @media (min-width: 768px) {
   .basket .basket-info .my-basket .basket-list > .basket-item .details > .details-content > div {
     display: inline-block;
     vertical-align: middle; } }
-.basket .basket-info .my-basket .delete-all {
-  display: inline-block;
-  font-size: 13px;
-  color: #2b2b2b;
-  padding-bottom: 7px;
-  margin-top: 45px;
-  box-shadow: 0 1px 0 #d7d7d7;
-  border-bottom: 1px solid #ababab; }
-  @media (min-width: 768px) {
-    .basket .basket-info .my-basket .delete-all {
-      margin-top: 50px; } }
+.basket .basket-info .my-basket .delete-btn {
+  margin-top: 45px; }
+  .basket .basket-info .my-basket .delete-btn .btn {
+    display: inline-block;
+    font-size: 13px;
+    color: #2b2b2b;
+    padding: 0;
+    padding-bottom: 7px;
+    box-shadow: 0 1px 0 #d7d7d7;
+    border-bottom: 1px solid #ababab; }
+    @media (min-width: 768px) {
+      .basket .basket-info .my-basket .delete-btn .btn {
+        margin-top: 50px; } }
+    .basket .basket-info .my-basket .delete-btn .btn.delete-all {
+      margin-right: 20px; }
 .basket .basket-info .my-basket .total {
   margin-top: 70px; }
   @media (min-width: 768px) {
