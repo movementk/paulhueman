@@ -293,6 +293,7 @@
                     @include lato();
                     @include font(12px, 25px);
                     color: #2b2b2b;
+                    font-weight: 600;
                 }
             }
         }
@@ -313,6 +314,7 @@
                         @include lato();
                         @include font(12px, 25px);
                         color: #2b2b2b;
+                        font-weight: 600;
                     }
                 }
                 &.on {

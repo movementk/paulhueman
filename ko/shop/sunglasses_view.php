@@ -17,8 +17,8 @@
             </div>
             <div class="g-view sunglasses-view">
                 <div class="row">
-                    <!-- 2017-02-09 visible-lg class 추가 -->
-                    <div class="col-xs-12 col-sm-12 col-lg-2 visible-lg">
+                    <!-- 2017-02-17 col-lg-1 로 수정  -->
+                    <div class="col-xs-12 col-sm-12 col-lg-1 visible-lg">
                         <div class="lnb">
                             <h2 class="visible-lg">SHOP</h2>
                             <ul>
@@ -27,7 +27,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-9 col-lg-8">
+                    <!-- 2017-02-17 col-lg-9 로 수정 -->
+                    <div class="col-xs-12 col-sm-9 col-lg-9">
                         <p class="product-img product-front">
                             <img src="/ko/assets/images/shop/details_view_img01.jpg" class="img-responsive" alt="정면사진">
                         </p>
@@ -119,7 +120,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-9 col-lg-8 col-lg-offset-2">
+                    <!-- 2017-02-17 col-lg-9, col-lg-offset-1 로 수정 -->
+                    <div class="col-xs-12 col-sm-9 col-lg-9 col-lg-offset-1">
                         <p class="product-img product-aspect">
                             <img src="/ko/assets/images/shop/details_view_img02.jpg" class="img-responsive" alt="측면사진">
                         </p>

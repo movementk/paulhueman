@@ -1,5 +1,6 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/ko/inc/dochead.php'); ?>
 <link href="/ko/assets/css/sub.css" rel="stylesheet">
+<link href="/ko/assets/css/shop.css" rel="stylesheet">
 </head>
 <body class="sub search-result">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/ko/inc/header.php'); ?>
@@ -36,6 +37,9 @@
                             검색어가 정확한지 다시 한번 확인해 주세요.
                         </p>
                         
+                        
+                        
+                        <!-- 2017-02-17 figcaption 제거  -->
                         <div class="glasses-list">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -51,9 +55,6 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.3</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
@@ -67,9 +68,6 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.2</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
@@ -83,16 +81,14 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.1</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
+                                        <!-- 2017-02-17 glasses-color 추가 -->
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -109,16 +105,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -135,16 +128,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -162,16 +152,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.3</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -188,16 +175,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -214,16 +198,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -241,16 +222,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.3</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -267,16 +245,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -293,16 +268,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -320,16 +292,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.3</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -346,16 +315,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>
@@ -372,16 +338,13 @@
                                                             <p style="background-image: url(/ko/assets/images/shop/item_img_hover.jpg)">
                                                             </p>
                                                         </div>
-                                                        <figcaption>
-                                                            <p>PHS - 1089D Col.5</p>
-                                                        </figcaption>
                                                     </figure>
                                                 </a>
                                             </li>
                                         </ul>
                                         <div class="glasses-color">
-                                            <br>
-                                            5 COLORS
+                                            <p>5 COLORS</p>
+                                            <p>PHS - 1089D Col.1</p>
                                         </div>
                                     </div>
                                 </div>

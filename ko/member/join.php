@@ -121,9 +121,11 @@
                             <label class="check"><input type="checkbox">이용약관에 동의합니다.</label>
                         </div>
                     </div>
+                    <!-- 2017-02-14 버튼 추가 -->
                     <div class="btn-area">
                         <p>
                             <button type="submit" class="btn btn-lg btn-gray">회원 가입</button>
+                            <a href="#" class="btn btn-lg btn-gray">회원 탈퇴</a>
                         </p>
                     </div>
                 </form>

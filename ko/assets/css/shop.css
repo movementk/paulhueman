@@ -40,7 +40,11 @@ address {
     padding: 0 5px; }
     @media (min-width: 992px) {
       .g-view .product-img .img-responsive {
-        max-width: 650px; } }
+        width: 650px; } }
+    @media (min-width: 1280px) {
+      .g-view .product-img .img-responsive {
+        width: 830px;
+        margin: 0 auto; } }
     .g-view .product-img.product-front {
       margin-top: 0;
       margin-bottom: 30px; }
