@@ -24,7 +24,11 @@
         padding: 0 5px;
         .img-responsive {
             @media(min-width: $md) {
-                max-width: 650px;
+                width: 650px;
+            }
+            @media(min-width: $lg) {
+                width: 830px;
+                margin: 0 auto;
             }
         }
         &.product-front {
