@@ -788,22 +788,21 @@ body.aside-open {
                     }
                     .checkbox {
                         width: 30px;
-                        text-align: center;
                     }
                     .figure {
                         width: 109px;
                         p {
-                            .img-responsive {
-                                margin: 0 auto;
-                            }
+                            text-align: center;
                         }
                         .sit_opt_list {
-                            margin: 10px 0 0;
+                            overflow: hidden;
+                            margin: 10px auto 0;
                             height: auto !important;
                             font-size: 0;
                             text-align: center;
+                            width: 70px;
                             .btn {
-                                display: inline-block;
+                                float: left;
                                 width: 20px;
                                 height: 20px;
                                 font-size: 10px;
@@ -816,7 +815,7 @@ body.aside-open {
                                 vertical-align: top;
                             }
                             .form-control {
-                                display: inline-block;
+                                float: left;
                                 width: 30px;
                                 height: 20px;
                                 text-align: center;
@@ -827,6 +826,7 @@ body.aside-open {
                                 border-left: 0;
                                 border-right: 0;
                                 @include lato();
+                                background-color: #fff;
                                 &:hover,&:focus {
                                     border-color: #dfdfdf;
                                 }

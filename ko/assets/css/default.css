@@ -968,23 +968,24 @@ body.aside-open {
           vertical-align: middle; }
         #aside-cart .aside-content .aside-body > ul > li .checkbox,
         #aside-wish .aside-content .aside-body > ul > li .checkbox {
-          width: 30px;
-          text-align: center; }
+          width: 30px; }
         #aside-cart .aside-content .aside-body > ul > li .figure,
         #aside-wish .aside-content .aside-body > ul > li .figure {
           width: 109px; }
-          #aside-cart .aside-content .aside-body > ul > li .figure p .img-responsive,
-          #aside-wish .aside-content .aside-body > ul > li .figure p .img-responsive {
-            margin: 0 auto; }
+          #aside-cart .aside-content .aside-body > ul > li .figure p,
+          #aside-wish .aside-content .aside-body > ul > li .figure p {
+            text-align: center; }
           #aside-cart .aside-content .aside-body > ul > li .figure .sit_opt_list,
           #aside-wish .aside-content .aside-body > ul > li .figure .sit_opt_list {
-            margin: 10px 0 0;
+            overflow: hidden;
+            margin: 10px auto 0;
             height: auto !important;
             font-size: 0;
-            text-align: center; }
+            text-align: center;
+            width: 70px; }
             #aside-cart .aside-content .aside-body > ul > li .figure .sit_opt_list .btn,
             #aside-wish .aside-content .aside-body > ul > li .figure .sit_opt_list .btn {
-              display: inline-block;
+              float: left;
               width: 20px;
               height: 20px;
               font-size: 10px;
@@ -997,7 +998,7 @@ body.aside-open {
               vertical-align: top; }
             #aside-cart .aside-content .aside-body > ul > li .figure .sit_opt_list .form-control,
             #aside-wish .aside-content .aside-body > ul > li .figure .sit_opt_list .form-control {
-              display: inline-block;
+              float: left;
               width: 30px;
               height: 20px;
               text-align: center;
@@ -1007,7 +1008,8 @@ body.aside-open {
               padding: 0;
               border-left: 0;
               border-right: 0;
-              font-family: 'Lato', sans-serif; }
+              font-family: 'Lato', sans-serif;
+              background-color: #fff; }
               #aside-cart .aside-content .aside-body > ul > li .figure .sit_opt_list .form-control:hover, #aside-cart .aside-content .aside-body > ul > li .figure .sit_opt_list .form-control:focus,
               #aside-wish .aside-content .aside-body > ul > li .figure .sit_opt_list .form-control:hover,
               #aside-wish .aside-content .aside-body > ul > li .figure .sit_opt_list .form-control:focus {
