@@ -436,6 +436,15 @@
         }
         .btn-area {
             margin-top: 75px;
+            p {
+                .btn {
+                    display: inline-block;
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
             @media(min-width: $sm) {
                 margin-top: 80px;
                 p {

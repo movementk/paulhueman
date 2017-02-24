@@ -94,7 +94,7 @@
                             </div>
                             <div class="input-write">
                                 <div class="orderer">
-                                    <h3>ORDERER</h3>
+                                    <h3>ORDER</h3>
                                     <div class="order-input">
                                         <div class="table-wrap">
                                             <table class="table table-bordered">

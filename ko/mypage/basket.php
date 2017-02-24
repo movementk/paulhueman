@@ -38,6 +38,10 @@
                             <h3>ITEMS</h3>
                             <ul class="basket-list">
                                 <li class="basket-item">
+                                    <!-- 2017-02-13 수정사항 form-group 체크박스 추가 -->
+                                    <div class="form-group">
+                                        <label><input type="checkbox"></label>
+                                    </div>
                                     <div class="figure">
                                         <p>
                                             <img src="/ko/assets/images/mypage/product_item_img01.gif" class="img-responsive" alt="구매상품 이미지">
@@ -64,6 +68,9 @@
                                     </div>
                                 </li>
                                 <li class="basket-item">
+                                    <div class="form-group">
+                                        <label><input type="checkbox"></label>
+                                    </div>
                                     <div class="figure">
                                         <p>
                                             <img src="/ko/assets/images/mypage/product_item_img01.gif" class="img-responsive" alt="구매상품 이미지">
@@ -90,7 +97,11 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="#" class="delete-all">DELETE ALL</a>
+                            <!-- 2017-02-13 수정사항 delete-item 추가 전체 delete-btn 으로 영역추가 -->
+                            <p class="delete-btn">
+                                <a href="#" class="btn delete-all" role="button">DELETE ALL</a>
+                                <a href="#" class="btn delete-item" role="button">DELETE ITEM</a>
+                            </p>
                             <dl class="total">
                                 <dt>Sub Total</dt>
                                 <dd>7,603,000</dd>

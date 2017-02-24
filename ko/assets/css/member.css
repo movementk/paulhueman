@@ -348,6 +348,11 @@ address {
         font-size: 13px; } }
 .join .join-form .btn-area {
   margin-top: 75px; }
+  .join .join-form .btn-area p .btn {
+    display: inline-block;
+    margin-right: 10px; }
+    .join .join-form .btn-area p .btn:last-child {
+      margin-right: 0; }
   @media (min-width: 768px) {
     .join .join-form .btn-area {
       margin-top: 80px; }
