@@ -50,4 +50,39 @@
         e.preventDefault();
     });
     
+    // 장바구니 버튼
+    $(document).on('click', '#header .btn-cart', function() {
+        $('html, body').toggleClass('cart-open');
+        $('#aside-cart .btn-cart-close').focus();
+    });
+    $(document).on('click', '#aside-cart .btn-cart-close', function() {
+        $('html, body').toggleClass('cart-open');
+        $('#header .btn-cart').focus();
+    });
+    $(document).on('click', '#aside-cart', function(e) {
+        if ($(e.target).attr('id') == 'aside-cart') {
+            $('#aside-cart .btn-cart-close').trigger('click');
+        }
+    });
+    $(document).on('click', '.product-details .cart-btn', function() {
+        $('html, body').toggleClass('cart-open');
+        $('#aside-cart .btn-cart-close').focus();
+    });
+    
+    
+    // 위시리스트 버튼
+    $(document).on('click', '.product-details .wish-btn', function() {
+        $('html, body').toggleClass('wish-open');
+        $('#aside-wish .btn-wish-close').focus();
+    });
+    $(document).on('click', '#aside-wish .btn-wish-close', function() {
+        $('html, body').toggleClass('wish-open');
+        $('#header .btn-wish').focus();
+    });
+    $(document).on('click', '#aside-wish', function(e) {
+        if ($(e.target).attr('id') == 'aside-wish') {
+            $('#aside-wish .btn-wish-close').trigger('click');
+        }
+    });
+    
 })(jQuery);

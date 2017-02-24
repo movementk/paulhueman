@@ -36,7 +36,8 @@ label {
   margin-bottom: 0; }
   @media (min-width: 768px) {
     label {
-      font-size: 13px; } }
+      font-size: 13px;
+      } }
 
 input[type=checkbox] {
   margin: 0; }

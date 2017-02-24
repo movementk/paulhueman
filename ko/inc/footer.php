@@ -1,3 +1,5 @@
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/ko/inc/cart.php'); ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/ko/inc/wish.php'); ?>
 <footer id="footer">
     <div class="container">
         <div class="row">

@@ -8,18 +8,22 @@
 html {
     position: relative;
     min-width: 320px;
-    &.aside-open {
+    &.aside-open,
+    &.cart-open {
         overflow: hidden;
         width: 100%;
         height: 100%;
     }
+    /*
     @media (min-width: $lg) {
-        &.aside-open {
+        &.aside-open,
+        &.cart-open {
             overflow: auto;
             width: auto;
             height: auto;
         }
     }
+    */
 }
 
 body {
@@ -425,8 +429,8 @@ a {
                         }
                         &.active {
                             > ul {
-                                padding-top: 20px;
-                                padding-bottom: 20px;
+                                padding-top: 10px;
+                                padding-bottom: 10px;
                                 height: auto;
                                 opacity: 1;
                                 z-index: 1;
@@ -707,6 +711,330 @@ body.aside-open {
         width: auto;
         height: auto;
     }
+}
+
+#aside-cart,
+#aside-wish {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .7);
+    z-index: 9999;
+    .aside-content {
+        position: absolute;
+        right: -290px;
+        padding-top: 50px;
+        padding-bottom: 150px;
+        width: 290px;
+        height: 100%;
+        background-color: #fff;
+        -webkit-transition: right .3s;
+        transition: right .3s;
+        border: 1px solid #dfdfdf;
+        .aside-head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+            .btn-cart-close,
+            .btn-wish-close {
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                padding: 0;
+                border: 0;
+                cursor: pointer;
+                z-index: 1;
+                @include maven();
+                font-size: 12px;
+                line-height: 20px;
+                color: #000;
+                font-weight: 500;
+                background-color: transparent;
+                &:after {
+                    float: right;
+                    margin-left: 10px;
+                    font-family: 'fontello';
+                    content: '\E812';
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+        .aside-body {
+            overflow: auto;
+            position: relative;
+            height: 100%;
+            @include lato();
+            @include font(12px, 40px);
+            letter-spacing: 1px;
+            color: #2b2b2b;
+            > ul {
+                > li {
+                    padding: 20px 0;
+                    border-bottom: 1px solid #dfdfdf;
+                    &:before {
+                        display: table;
+                        content: " ";
+                        table-layout: fixed;
+                    }
+                    > div {
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    .checkbox {
+                        width: 30px;
+                        text-align: center;
+                    }
+                    .figure {
+                        width: 109px;
+                        p {
+                            .img-responsive {
+                                margin: 0 auto;
+                            }
+                        }
+                        .sit_opt_list {
+                            margin: 10px 0 0;
+                            height: auto !important;
+                            font-size: 0;
+                            text-align: center;
+                            .btn {
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                font-size: 10px;
+                                color: #2b2b2b;
+                                line-height: 18px;
+                                text-align: center;
+                                padding: 0;
+                                border: 1px solid #dfdfdf;
+                                border-radius: 0;
+                                vertical-align: top;
+                            }
+                            .form-control {
+                                display: inline-block;
+                                width: 30px;
+                                height: 20px;
+                                text-align: center;
+                                font-size: 10px;
+                                color: #2b2b2b;
+                                font-weight: 400;
+                                padding: 0;
+                                border-left: 0;
+                                border-right: 0;
+                                @include lato();
+                                &:hover,&:focus {
+                                    border-color: #dfdfdf;
+                                }
+                            }
+                        }
+                    }
+                    .summary {
+                        padding-left: 10px;
+                        width: 149px;
+                        @include maven();
+                        h5 {
+                            font-size: 13px;
+                            line-height: 18px;
+                            letter-spacing: 0;
+                            color: #2b2b2b;
+                        }
+                        dl {
+                            line-height: 18px;
+                            letter-spacing: 0;
+                            dt, dd {
+                                font-weight: 500;
+                                color: #666;
+                            }
+                            dt {
+                                float: left;
+                            }
+                        }
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                            letter-spacing: 0;
+                            font-weight: 500;
+                            color: #666;
+                        }
+                    }
+                    .delete {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .aside-foot {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            .controls {
+                height: 50px;
+                text-align: center;
+                ul {
+                    padding-top: 15px;
+                    display: inline-block;
+                    li {
+                        display: inline;
+                        a {
+                            float: left;
+                            margin-left: 25px;
+                            margin-right: 25px;
+                            font-size: 12px;
+                            line-height: 25px;
+                            color: #2b2b2b;
+                            font-weight: 400;
+                            span {
+                                padding-bottom: 3px;
+                            }
+                            &:hover, &:focus {
+                                span {
+                                    border-bottom: 1px solid #ababab;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .summary {
+                padding-top: 15px;
+                height: 100px;
+                border-top: 1px solid #dfdfdf;
+                dl {
+                    text-align: center;
+                    @include maven();
+                    color: #2b2b2b;
+                    font-size: 12px;
+                    line-height: 18px;
+                    dt {
+                        display: inline;
+                        font-weight: 500;
+                        &:after {
+                            content: ':';
+                        }
+                    }
+                    dd {
+                        display: inline;
+                        font-weight: 500;
+                    }
+                }
+                p {
+                    margin-top: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 32px;
+                        background-color: #2b2b2b;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 32px;
+                        @include lato();
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: $sm) {
+        .aside-content {
+            right: -400px;
+            width: 400px;
+            .aside-head {
+                .btn-cart-close,
+                .btn-wish-close {
+                    right: 30px;
+                }
+            }
+            .aside-body {
+                > ul {
+                    > li {
+                        .checkbox {
+                            width: 50px;
+                        }
+                        .figure {
+
+                        }
+                        .summary {
+                            padding-left: 30px;
+                            width: 199px;
+                        }
+                        .delete {
+                            display: table-cell;
+                            width: 50px;
+                            text-align: center;
+                            .btn-delete {
+                                &:before {
+                                    font-family: 'fontello';
+                                    content: '\E813';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        background-color: transparent;
+    }
+}
+
+#aside-wish {
+    .aside-content {
+        padding-bottom: 100px;
+        .aside-foot {
+            height: 100px;
+        }
+    }
+}
+
+body.cart-open {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    #aside-cart {
+        visibility: visible;
+        right: 0;
+        .aside-content {
+            right: 0;
+        }
+    }
+    /*
+    @media (min-width: $lg) {
+        overflow: auto;
+        width: auto;
+        height: auto;
+    }
+    */
+}
+
+body.wish-open {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    #aside-wish {
+        visibility: visible;
+        right: 0;
+        .aside-content {
+            right: 0;
+        }
+    }
+    /*
+    @media (min-width: $lg) {
+        overflow: auto;
+        width: auto;
+        height: auto;
+    }
+    */
 }
 
 // 푸터 영역
