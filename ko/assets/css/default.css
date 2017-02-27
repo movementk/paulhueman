@@ -968,13 +968,14 @@ body.aside-open {
           vertical-align: middle; }
         #aside-cart .aside-content .aside-body > ul > li .checkbox,
         #aside-wish .aside-content .aside-body > ul > li .checkbox {
-          width: 30px; }
+          width: 30px;
+          text-align: center; }
         #aside-cart .aside-content .aside-body > ul > li .figure,
         #aside-wish .aside-content .aside-body > ul > li .figure {
           width: 109px; }
-          #aside-cart .aside-content .aside-body > ul > li .figure p,
-          #aside-wish .aside-content .aside-body > ul > li .figure p {
-            text-align: center; }
+          #aside-cart .aside-content .aside-body > ul > li .figure p .img-responsive,
+          #aside-wish .aside-content .aside-body > ul > li .figure p .img-responsive {
+            margin: 0 auto; }
           #aside-cart .aside-content .aside-body > ul > li .figure .sit_opt_list,
           #aside-wish .aside-content .aside-body > ul > li .figure .sit_opt_list {
             overflow: hidden;

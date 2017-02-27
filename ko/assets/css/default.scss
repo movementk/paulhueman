@@ -788,11 +788,14 @@ body.aside-open {
                     }
                     .checkbox {
                         width: 30px;
+                        text-align: center;
                     }
                     .figure {
                         width: 109px;
                         p {
-                            text-align: center;
+                            .img-responsive {
+                                margin: 0 auto;
+                            }
                         }
                         .sit_opt_list {
                             overflow: hidden;
