@@ -121,14 +121,14 @@
 
 /* view 공통 */
 .campaign-view {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
     .details-img {
         margin-bottom: 120px;
         @media(min-width: $sm) {
             margin-bottom: 160px;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
         }
         figcaption {
             font-size: 11px;
